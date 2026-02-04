@@ -84,8 +84,39 @@
         }
 
         .om-yu-lockup {
-            height: 24px;
-            width: auto;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            height: 20px;
+        }
+
+        .om-text {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #1A1A1A;
+            letter-spacing: 0.5px;
+            line-height: 1;
+        }
+
+        .heart-separator {
+            font-size: 11px;
+            line-height: 1;
+        }
+
+        .yu-square {
+            width: 20px;
+            height: 20px;
+            background: #E30D76;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
         }
 
         .header-right {
@@ -613,7 +644,11 @@
                 </div>
             </div>
             <div class="header-center">
-                <img src="om-yu-logo.png" alt="Old Mutual ❤️ yu" class="om-yu-lockup">
+                <div class="om-yu-lockup">
+                    <span class="om-text">OLD MUTUAL</span>
+                    <span class="heart-separator">❤️</span>
+                    <div class="yu-square">yu</div>
+                </div>
             </div>
             <div class="header-right">
                 <span class="coin-count">2,502</span>
