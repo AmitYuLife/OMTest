@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen G: Post-Retirement Engagement - Old Mutual ❤️ Yu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Bariol', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F5F5F5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .screen {
+            width: 375px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            height: 92px;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.08);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 52px 24px 16px 24px;
+            z-index: 100;
+        }
+
+        .header-left {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .hamburger {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .hamburger svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .header-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .om-yu-lockup {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            height: 20px;
+        }
+
+        .om-text {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #1A1A1A;
+            letter-spacing: 0.5px;
+            line-height: 1;
+        }
+
+        .heart-separator {
+            font-size: 11px;
+            line-height: 1;
+        }
+
+        .yu-square {
+            width: 20px;
+            height: 20px;
+            background: #E30D76;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coin-count {
+            font-size: 18px;
+            color: #1A1A1A;
+            font-weight: 400;
+        }
+
+        .coin-icon {
+            width: 24px;
+            height: 24px;
+            background: #FFD600;
+            border-radius: 50%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #429479 0%, #5BA89A 100%);
+            min-height: 240px;
+            border-radius: 0 0 16px 16px;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-illustration {
+            position: absolute;
+            right: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 120px;
+            opacity: 0.15;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 6px 12px;
+            border-radius: 20px;
+            align-self: flex-start;
+            z-index: 1;
+        }
+
+        .hero-badge-text {
+            font-size: 11px;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 32px;
+            color: white;
+            z-index: 1;
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: white;
+            opacity: 0.9;
+            z-index: 1;
+        }
+
+        /* Content Section */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 32px 24px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            color: #1A1A1A;
+        }
+
+        /* Monthly Income Card */
+        .income-card {
+            background: linear-gradient(135deg, #F8FFF4 0%, #FFFFFF 100%);
+            border: 2px solid #76B657;
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .income-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .income-label {
+            font-size: 14px;
+            font-weight: 700;
+            color: #76B657;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .income-status {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: #ECF9EE;
+            padding: 4px 8px;
+            border-radius: 12px;
+        }
+
+        .income-status-dot {
+            width: 8px;
+            height: 8px;
+            background: #76B657;
+            border-radius: 50%;
+        }
+
+        .income-status-text {
+            font-size: 11px;
+            font-weight: 700;
+            color: #76B657;
+        }
+
+        .income-amount {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;
+            color: #1A1A1A;
+        }
+
+        .income-subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        /* Balance Overview */
+        .balance-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .balance-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .balance-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #A0A09B;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        .balance-value {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+        }
+
+        .balance-change {
+            font-size: 12px;
+            font-weight: 700;
+            color: #76B657;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* Sustainability Widget */
+        .sustainability-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .sustainability-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sustainability-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+        }
+
+        .sustainability-score {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            border: 4px solid #76B657;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #76B657;
+        }
+
+        .sustainability-bar {
+            height: 32px;
+            background: #E3E3E1;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .sustainability-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #76B657 0%, #5BA348 100%);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 12px;
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+            transition: width 0.6s ease;
+        }
+
+        .sustainability-description {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #464647;
+        }
+
+        /* Nudge Card */
+        .nudge-card {
+            background: linear-gradient(135deg, #FFF9E5 0%, #FFFBF0 100%);
+            border: 2px solid #FFD600;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .nudge-icon {
+            width: 48px;
+            height: 48px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .nudge-content {
+            flex: 1;
+        }
+
+        .nudge-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+            margin-bottom: 8px;
+        }
+
+        .nudge-text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        /* Recent Activity */
+        .activity-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .activity-item {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .activity-icon {
+            width: 40px;
+            height: 40px;
+            background: #FAFAFE;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .activity-content {
+            flex: 1;
+        }
+
+        .activity-title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            color: #1A1A1A;
+            margin-bottom: 4px;
+        }
+
+        .activity-time {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #A0A09B;
+        }
+
+        .activity-amount {
+            align-self: center;
+            font-size: 16px;
+            font-weight: 700;
+            color: #76B657;
+        }
+
+        /* Support Section */
+        .support-card {
+            background: #FAFAFE;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .support-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .support-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+            margin-bottom: 8px;
+        }
+
+        .support-text {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #464647;
+            margin-bottom: 16px;
+        }
+
+        .btn-primary {
+            background: #76B657;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background: #5BA348;
+        }
+
+        /* Navigation Footer */
+        .nav-footer {
+            padding: 20px 24px;
+            background: #FAFAFE;
+            border-top: 1px solid #E3E3E1;
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-btn {
+            flex: 1;
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #464647;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .nav-btn:hover {
+            border-color: #76B657;
+            color: #76B657;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <div class="hamburger">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                        <line x1="3" y1="7" x2="21" y2="7"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="17" x2="21" y2="17"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="om-yu-lockup">
+                    <span class="om-text">OLD MUTUAL</span>
+                    <span class="heart-separator">❤️</span>
+                    <div class="yu-square">yu</div>
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="coin-count">2,502</span>
+                <div class="coin-icon"></div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-illustration">🌴</div>
+            <div class="hero-badge">
+                <span class="hero-badge-text">Living Annuity</span>
+            </div>
+            <h1 class="hero-title">Your retirement income</h1>
+            <p class="hero-subtitle">Sustainable and growing with you</p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <!-- Monthly Income -->
+            <div class="income-card">
+                <div class="income-header">
+                    <div class="income-label">This month's income</div>
+                    <div class="income-status">
+                        <div class="income-status-dot"></div>
+                        <div class="income-status-text">On track</div>
+                    </div>
+                </div>
+                <div class="income-amount">R7,850</div>
+                <p class="income-subtitle">Paid on the 1st of every month • Next payment: Feb 1</p>
+            </div>
+
+            <!-- Balance Overview -->
+            <h2 class="section-title">Your living annuity</h2>
+            <div class="balance-grid">
+                <div class="balance-card">
+                    <div class="balance-label">Current Balance</div>
+                    <div class="balance-value">R1.18M</div>
+                    <div class="balance-change">
+                        <span>↑</span>
+                        <span>+2.3% this year</span>
+                    </div>
+                </div>
+                <div class="balance-card">
+                    <div class="balance-label">Drawdown Rate</div>
+                    <div class="balance-value">7.5%</div>
+                    <div style="font-size: 12px; color: #464647;">Per year</div>
+                </div>
+                <div class="balance-card">
+                    <div class="balance-label">Years Covered</div>
+                    <div class="balance-value">18+ years</div>
+                    <div style="font-size: 12px; color: #464647;">At current rate</div>
+                </div>
+                <div class="balance-card">
+                    <div class="balance-label">Total Paid Out</div>
+                    <div class="balance-value">R94k</div>
+                    <div style="font-size: 12px; color: #464647;">Past 12 months</div>
+                </div>
+            </div>
+
+            <!-- Sustainability Score -->
+            <h2 class="section-title">Sustainability check</h2>
+            <div class="sustainability-card">
+                <div class="sustainability-header">
+                    <div class="sustainability-title">Your drawdown is healthy</div>
+                    <div class="sustainability-score">85</div>
+                </div>
+                <div class="sustainability-bar">
+                    <div class="sustainability-fill" style="width: 85%;">Sustainable</div>
+                </div>
+                <p class="sustainability-description">
+                    At your current rate of 7.5%, your income should last 18+ years while still growing. This is within the recommended 5-8% range for sustainable retirement income.
+                </p>
+            </div>
+
+            <!-- Behavioral Nudge -->
+            <div class="nudge-card">
+                <div class="nudge-icon">💡</div>
+                <div class="nudge-content">
+                    <div class="nudge-title">Smart tip for this quarter</div>
+                    <p class="nudge-text">
+                        Markets performed well this year (+8.2%). Consider leaving some growth in your fund rather than taking an extra drawdown—your future self will thank you.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <h2 class="section-title">Recent activity</h2>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <div class="activity-icon">💰</div>
+                    <div class="activity-content">
+                        <div class="activity-title">Income payment received</div>
+                        <div class="activity-time">Feb 1, 2026</div>
+                    </div>
+                    <div class="activity-amount">R7,850</div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">📈</div>
+                    <div class="activity-content">
+                        <div class="activity-title">Investment growth</div>
+                        <div class="activity-time">January 2026</div>
+                    </div>
+                    <div class="activity-amount">+R27,140</div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon">💰</div>
+                    <div class="activity-content">
+                        <div class="activity-title">Income payment received</div>
+                        <div class="activity-time">Jan 1, 2026</div>
+                    </div>
+                    <div class="activity-amount">R7,850</div>
+                </div>
+            </div>
+
+            <!-- Support Section -->
+            <div class="support-card">
+                <div class="support-icon">🤝</div>
+                <div class="support-title">Your adviser is still here</div>
+                <p class="support-text">
+                    Retirement is a journey, not a destination. Your adviser remains available to help you adjust as life changes.
+                </p>
+                <button class="btn-primary">Contact your adviser</button>
+            </div>
+
+            <!-- Peace of Mind -->
+            <div style="background: linear-gradient(135deg, #ECF9EE 0%, #F8FFF4 100%); border: 2px solid #76B657; border-radius: 16px; padding: 20px; text-align: center;">
+                <p style="font-size: 16px; font-weight: 700; color: #1A1A1A; margin-bottom: 8px;">You've earned this peace of mind</p>
+                <p style="font-size: 13px; color: #464647; line-height: 20px;">
+                    You saved wisely, preserved your benefits, and now your retirement is sustainable. Old Mutual is here with you for the long run.
+                </p>
+            </div>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <button class="nav-btn" onclick="window.open('screen-f-pre-retirement.html', '_blank')">← Pre-Retirement</button>
+            <button class="nav-btn" onclick="window.open('screen-a-unified-home.html', '_blank')">Home</button>
+            <button class="nav-btn" onclick="window.open('index.html', '_blank')">All Screens</button>
+        </div>
+    </div>
+</body>
+</html>

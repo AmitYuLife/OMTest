@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen F: Pre-Retirement Guidance - Old Mutual ❤️ Yu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Bariol', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F5F5F5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .screen {
+            width: 375px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            height: 92px;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.08);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 52px 24px 16px 24px;
+            z-index: 100;
+        }
+
+        .header-left {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .hamburger {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .hamburger svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .header-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .om-yu-lockup {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            height: 20px;
+        }
+
+        .om-text {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #1A1A1A;
+            letter-spacing: 0.5px;
+            line-height: 1;
+        }
+
+        .heart-separator {
+            font-size: 11px;
+            line-height: 1;
+        }
+
+        .yu-square {
+            width: 20px;
+            height: 20px;
+            background: #E30D76;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coin-count {
+            font-size: 18px;
+            color: #1A1A1A;
+            font-weight: 400;
+        }
+
+        .coin-icon {
+            width: 24px;
+            height: 24px;
+            background: #FFD600;
+            border-radius: 50%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #5B4BB9 0%, #7B6BC9 100%);
+            min-height: 220px;
+            border-radius: 0 0 16px 16px;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 6px 12px;
+            border-radius: 20px;
+            align-self: flex-start;
+        }
+
+        .hero-badge-text {
+            font-size: 11px;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 32px;
+            color: white;
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: white;
+            opacity: 0.9;
+        }
+
+        /* Content Section */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 32px 24px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            color: #1A1A1A;
+        }
+
+        /* Timeline Card */
+        .timeline-card {
+            background: linear-gradient(135deg, #FFF9E5 0%, #FFFBF0 100%);
+            border: 2px solid #FFD600;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .timeline-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .timeline-icon {
+            font-size: 32px;
+        }
+
+        .timeline-years {
+            background: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #E65100;
+        }
+
+        .timeline-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+        }
+
+        .timeline-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        /* Current Status */
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .status-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .status-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #A0A09B;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        .status-value {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+        }
+
+        .status-icon {
+            font-size: 24px;
+            margin-top: 4px;
+        }
+
+        /* Projection Card */
+        .projection-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .projection-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .projection-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+        }
+
+        .projection-badge {
+            background: #ECF9EE;
+            color: #76B657;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .projection-amount {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #76B657;
+        }
+
+        .projection-subtitle {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #464647;
+        }
+
+        .projection-visual {
+            height: 100px;
+            background: #FAFAFE;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            padding: 12px;
+            gap: 8px;
+        }
+
+        .projection-bar {
+            flex: 1;
+            background: #76B657;
+            border-radius: 4px 4px 0 0;
+            transition: height 0.6s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding-bottom: 8px;
+        }
+
+        .projection-bar-label {
+            font-size: 9px;
+            font-weight: 700;
+            color: white;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
+        /* Action Cards */
+        .action-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            gap: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .action-card:hover {
+            border-color: #76B657;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .action-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .action-icon.increase {
+            background: linear-gradient(135deg, #ECF9EE 0%, #D4F1E0 100%);
+        }
+
+        .action-icon.balance {
+            background: linear-gradient(135deg, #FFF9E5 0%, #FFE8A1 100%);
+        }
+
+        .action-icon.review {
+            background: linear-gradient(135deg, #F3F4FF 0%, #E0E3FF 100%);
+        }
+
+        .action-content {
+            flex: 1;
+        }
+
+        .action-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #76B657;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .action-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+            margin-bottom: 6px;
+        }
+
+        .action-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #A0A09B;
+        }
+
+        .action-arrow {
+            align-self: center;
+            color: #A0A09B;
+            font-size: 20px;
+        }
+
+        /* What Matters Now */
+        .matters-box {
+            background: linear-gradient(135deg, #F8FFF4 0%, #FFFFFF 100%);
+            border: 2px solid #76B657;
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .matters-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .matters-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .matters-item {
+            display: flex;
+            gap: 12px;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .matters-number {
+            width: 24px;
+            height: 24px;
+            background: #76B657;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .matters-text {
+            flex: 1;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        /* Navigation Footer */
+        .nav-footer {
+            padding: 20px 24px;
+            background: #FAFAFE;
+            border-top: 1px solid #E3E3E1;
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-btn {
+            flex: 1;
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #464647;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .nav-btn:hover {
+            border-color: #76B657;
+            color: #76B657;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <div class="hamburger">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                        <line x1="3" y1="7" x2="21" y2="7"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="17" x2="21" y2="17"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="om-yu-lockup">
+                    <span class="om-text">OLD MUTUAL</span>
+                    <span class="heart-separator">❤️</span>
+                    <div class="yu-square">yu</div>
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="coin-count">2,502</span>
+                <div class="coin-icon"></div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-badge">
+                <span class="hero-badge-text">Retirement Planning</span>
+            </div>
+            <h1 class="hero-title">You're 10 years away</h1>
+            <p class="hero-subtitle">Here's what matters most now</p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <!-- Timeline Alert -->
+            <div class="timeline-card">
+                <div class="timeline-header">
+                    <div class="timeline-icon">⏰</div>
+                    <div class="timeline-years">10 years</div>
+                </div>
+                <div class="timeline-title">This is your power decade</div>
+                <p class="timeline-description">
+                    The last 10 years before retirement are when small changes have the biggest impact. You still have time to optimize.
+                </p>
+            </div>
+
+            <!-- Current Status -->
+            <h2 class="section-title">Where you are today</h2>
+            <div class="status-grid">
+                <div class="status-card">
+                    <div class="status-label">Current Value</div>
+                    <div class="status-value">R475k</div>
+                    <div class="status-icon">💰</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-label">Your Age</div>
+                    <div class="status-value">55 years</div>
+                    <div class="status-icon">🎂</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-label">Monthly Saving</div>
+                    <div class="status-value">R3,250</div>
+                    <div class="status-icon">📅</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-label">Retirement Age</div>
+                    <div class="status-value">65 years</div>
+                    <div class="status-icon">🏖️</div>
+                </div>
+            </div>
+
+            <!-- Projection -->
+            <h2 class="section-title">Your retirement scenarios</h2>
+            
+            <div class="projection-card">
+                <div class="projection-header">
+                    <div class="projection-title">If nothing changes</div>
+                    <div class="projection-badge">Current path</div>
+                </div>
+                <div class="projection-amount">R892k</div>
+                <p class="projection-subtitle">at age 65 • R5,950/month income</p>
+                <div class="projection-visual">
+                    <div class="projection-bar" style="height: 40%;">
+                        <span class="projection-bar-label">Now</span>
+                    </div>
+                    <div class="projection-bar" style="height: 60%;">
+                        <span class="projection-bar-label">5 yrs</span>
+                    </div>
+                    <div class="projection-bar" style="height: 85%;">
+                        <span class="projection-bar-label">10 yrs</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projection-card" style="border: 2px solid #76B657; background: linear-gradient(135deg, #F8FFF4 0%, #FFFFFF 100%);">
+                <div class="projection-header">
+                    <div class="projection-title">If you increase by 15%</div>
+                    <div class="projection-badge" style="background: #76B657; color: white;">Recommended</div>
+                </div>
+                <div class="projection-amount">R1.18M</div>
+                <p class="projection-subtitle">at age 65 • R7,850/month income • +R1,900 better</p>
+                <div class="projection-visual">
+                    <div class="projection-bar" style="height: 40%; background: #5BA348;">
+                        <span class="projection-bar-label">Now</span>
+                    </div>
+                    <div class="projection-bar" style="height: 75%; background: #76B657;">
+                        <span class="projection-bar-label">5 yrs</span>
+                    </div>
+                    <div class="projection-bar" style="height: 100%; background: #76B657;">
+                        <span class="projection-bar-label">10 yrs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What Matters Now -->
+            <div class="matters-box">
+                <div class="matters-title">What matters most in the next 10 years</div>
+                <div class="matters-list">
+                    <div class="matters-item">
+                        <div class="matters-number">1</div>
+                        <div class="matters-text"><strong>Maximize contributions</strong> while you're still earning</div>
+                    </div>
+                    <div class="matters-item">
+                        <div class="matters-number">2</div>
+                        <div class="matters-text"><strong>Balance growth and protection</strong> as you approach retirement</div>
+                    </div>
+                    <div class="matters-item">
+                        <div class="matters-number">3</div>
+                        <div class="matters-text"><strong>Review your protection</strong> to match changing family needs</div>
+                    </div>
+                    <div class="matters-item">
+                        <div class="matters-number">4</div>
+                        <div class="matters-text"><strong>Plan your lifestyle</strong> and what retirement looks like for you</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Cards -->
+            <h2 class="section-title">Simple actions you can take</h2>
+
+            <div class="action-card">
+                <div class="action-icon increase">📈</div>
+                <div class="action-content">
+                    <div class="action-label">Recommended</div>
+                    <div class="action-title">Increase contributions by 15%</div>
+                    <div class="action-description">Add R488/month to reach R1.18M at retirement</div>
+                </div>
+                <div class="action-arrow">→</div>
+            </div>
+
+            <div class="action-card">
+                <div class="action-icon balance">⚖️</div>
+                <div class="action-content">
+                    <div class="action-label">Smart move</div>
+                    <div class="action-title">Rebalance your portfolio</div>
+                    <div class="action-description">Adjust growth vs. stability for your timeline</div>
+                </div>
+                <div class="action-arrow">→</div>
+            </div>
+
+            <div class="action-card">
+                <div class="action-icon review">🛡️</div>
+                <div class="action-content">
+                    <div class="action-label">Optional</div>
+                    <div class="action-title">Review your protection</div>
+                    <div class="action-description">As kids leave home, coverage needs change</div>
+                </div>
+                <div class="action-arrow">→</div>
+            </div>
+
+            <!-- Support Message -->
+            <div style="background: #FAFAFE; border: 1px solid #E3E3E1; border-radius: 16px; padding: 20px; text-align: center;">
+                <p style="font-size: 14px; font-weight: 700; color: #1A1A1A; margin-bottom: 8px;">You're not alone in this</p>
+                <p style="font-size: 13px; color: #464647; line-height: 20px; margin-bottom: 16px;">
+                    Your adviser can help you make the right choices for your final decade before retirement.
+                </p>
+                <button style="background: #76B657; color: white; border: none; border-radius: 8px; padding: 12px 24px; font-size: 14px; font-weight: 700; cursor: pointer; width: 100%;">
+                    Schedule a planning session
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <button class="nav-btn" onclick="window.open('screen-a-unified-home.html', '_blank')">← Home</button>
+            <button class="nav-btn" onclick="window.open('screen-g-post-retirement.html', '_blank')">Post-Retirement →</button>
+            <button class="nav-btn" onclick="window.open('index.html', '_blank')">All Screens</button>
+        </div>
+    </div>
+</body>
+</html>

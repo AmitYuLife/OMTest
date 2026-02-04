@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Mutual ❤️ Yu - Complete Prototype</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Bariol', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #F8FFF4 0%, #FFF3F8 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .page-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .logo-lockup {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .om-text-large {
+            font-family: Arial, sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: #1A1A1A;
+            letter-spacing: 1px;
+        }
+
+        .heart-large {
+            font-size: 28px;
+        }
+
+        .yu-square-large {
+            width: 40px;
+            height: 40px;
+            background: #E30D76;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            color: #1A1A1A;
+            margin-bottom: 16px;
+        }
+
+        .page-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            color: #464647;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-top: 32px;
+            padding: 24px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #76B657;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            font-weight: 700;
+            color: #A0A09B;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Screen Grid */
+        .screens-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .screen-card {
+            background: white;
+            border: 2px solid #E3E3E1;
+            border-radius: 20px;
+            padding: 28px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .screen-card:hover {
+            border-color: #76B657;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            transform: translateY(-4px);
+        }
+
+        .screen-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--accent-color);
+        }
+
+        .screen-card.anchor::before { background: #E30D76; }
+        .screen-card.critical::before { background: #429479; }
+
+        .screen-badge {
+            display: inline-block;
+            background: var(--badge-bg);
+            color: var(--badge-color);
+            font-size: 10px;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        .screen-icon {
+            font-size: 56px;
+            margin-bottom: 16px;
+            line-height: 1;
+        }
+
+        .screen-stage {
+            font-size: 12px;
+            font-weight: 700;
+            color: #A0A09B;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .screen-title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            color: #1A1A1A;
+            margin-bottom: 12px;
+        }
+
+        .screen-description {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #464647;
+            margin-bottom: 16px;
+        }
+
+        .screen-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .screen-feature {
+            background: #FAFAFE;
+            font-size: 12px;
+            font-weight: 700;
+            color: #464647;
+            padding: 6px 10px;
+            border-radius: 6px;
+        }
+
+        .screen-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #76B657;
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .screen-cta:hover {
+            background: #5BA348;
+        }
+
+        /* Project Info */
+        .project-info {
+            background: white;
+            border-radius: 20px;
+            padding: 32px;
+            margin-top: 48px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+        }
+
+        .project-info-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1A1A1A;
+            margin-bottom: 16px;
+        }
+
+        .project-info-text {
+            font-size: 15px;
+            line-height: 24px;
+            color: #464647;
+            margin-bottom: 24px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item {
+            padding: 16px;
+            background: #FAFAFE;
+            border-radius: 12px;
+        }
+
+        .info-item-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #A0A09B;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .info-item-value {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1A1A1A;
+        }
+
+        /* Footer */
+        .page-footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 2px solid #E3E3E1;
+        }
+
+        .page-footer-text {
+            font-size: 14px;
+            color: #A0A09B;
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="page-header">
+            <div class="logo-lockup">
+                <span class="om-text-large">OLD MUTUAL</span>
+                <span class="heart-large">❤️</span>
+                <div class="yu-square-large">yu</div>
+            </div>
+            <h1 class="page-title">Unified Engagement Layer</h1>
+            <p class="page-subtitle">
+                One financial home across your full lifetime—from first job to retirement and beyond. Behavioral intelligence meets member-first design.
+            </p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Screens</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">7</div>
+                    <div class="stat-label">Life Stages</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">Relationship</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screens Grid -->
+        <div class="screens-grid">
+            <!-- Screen A -->
+            <div class="screen-card anchor" style="--accent-color: #76B657; --badge-bg: #E30D76; --badge-color: white;" onclick="window.open('screen-a-unified-home.html', '_blank')">
+                <span class="screen-badge">Anchor Screen</span>
+                <div class="screen-icon">🏠</div>
+                <div class="screen-stage">Screen A</div>
+                <h2 class="screen-title">Unified Member Home</h2>
+                <p class="screen-description">
+                    The foundational screen showing retirement + risk in one place. Your personal financial dashboard.
+                </p>
+                <div class="screen-features">
+                    <span class="screen-feature">Combined value view</span>
+                    <span class="screen-feature">Behavioral nudges</span>
+                    <span class="screen-feature">Action tiles</span>
+                </div>
+                <a href="screen-a-unified-home.html" class="screen-cta" onclick="event.stopPropagation()">
+                    <span>View Screen</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Screen B -->
+            <div class="screen-card" style="--accent-color: #FFD600; --badge-bg: #FFF9E5; --badge-color: #E65100;" onclick="window.open('screen-b-active-employment.html', '_blank')">
+                <span class="screen-badge">Active Employment</span>
+                <div class="screen-icon">💼</div>
+                <div class="screen-stage">Screen B</div>
+                <h2 class="screen-title">Smart Upsell & Cross-sell</h2>
+                <p class="screen-description">
+                    Life event triggers contextual prompts. Helpful suggestions, never forced.
+                </p>
+                <div class="screen-features">
+                    <span class="screen-feature">Life events</span>
+                    <span class="screen-feature">Social proof</span>
+                    <span class="screen-feature">No pressure</span>
+                </div>
+                <a href="screen-b-active-employment.html" class="screen-cta" onclick="event.stopPropagation()">
+                    <span>View Screen</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Screen C -->
+            <div class="screen-card" style="--accent-color: #E30D76; --badge-bg: #FFF3F8; --badge-color: #E30D76;" onclick="window.open('screen-c-life-event.html', '_blank')">
+                <span class="screen-badge">AI-Powered</span>
+                <div class="screen-icon">✨</div>
+                <div class="screen-stage">Screen C</div>
+                <h2 class="screen-title">Life Event AI Insights</h2>
+                <p class="screen-description">
+                    Personalized scenarios showing the impact of choices. Simple, visual, empowering.
+                </p>
+                <div class="screen-features">
+                    <span class="screen-feature">Smart scenarios</span>
+                    <span class="screen-feature">AI insights</span>
+                    <span class="screen-feature">Visual comparisons</span>
+                </div>
+                <a href="screen-c-life-event.html" class="screen-cta" onclick="event.stopPropagation()">
+                    <span>View Screen</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Screen D -->
+            <div class="screen-card critical" style="--accent-color: #429479; --badge-bg: #FFD600; --badge-color: #1A1A1A;" onclick="window.open('screen-d-employee-exit.html', '_blank')">
+                <span class="screen-badge">⭐ Critical Moment</span>
+                <div class="screen-icon">🔄</div>
+                <div class="screen-stage">Screen D</div>
+                <h2 class="screen-title">Employee Exit Journey</h2>
+                <p class="screen-description">
+                    The highest value moment. Choice architecture makes preservation the obvious path.
+                </p>
+                <div class="screen-features">
+                    <span class="screen-feature">3 clear options</span>
+                    <span class="screen-feature">Behavioral nudges</span>
+                    <span class="screen-feature">No fear tactics</span>
+                </div>
+                <a href="screen-d-employee-exit.html" class="screen-cta" onclick="event.stopPropagation()">
+                    <span>View Screen</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Screen E -->
+            <div class="screen-card" style="--accent-color: #429479; --badge-bg: #ECF9EE; --badge-color: #357A61;" onclick="window.open('screen-e-post-employment.html', '_blank')">
+                <span class="screen-badge">Continuation</span>
+                <div class="screen-icon">🏠</div>
+                <div class="screen-stage">Screen E</div>
+                <h2 class="screen-title">Post-Employment</h2>
+                <p class="screen-description">
+                    Seamless transition to individual membership. Nothing breaks. Everything continues.
+                </p>
+                <div class="screen-features">
+                    <span class="screen-feature">Member-for-Life</span>
+                    <span class="screen-feature">Same experience</span>
+                    <span class="screen-feature">New options</span>
+                </div>
+                <a href="screen-e-post-employment.html" class="screen-cta" onclick="event.stopPropagation()">
+                    <span>View Screen</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Screen F -->
+            <div class="screen-card" style="--accent-color: #5B4BB9; --badge-bg: #F3F4FF; --badge-color: #5B4BB9;" onclick="window.open('screen-f-pre-retirement.html', '_blank')">
+                <span class="screen-badge">Planning Phase</span>
+                <div class="screen-icon">⏰</div>
+                <div class="screen-stage">Screen F</div>
+                <h2 class="screen-title">Pre-Retirement Guidance</h2>
+                <p class="screen-description">
+                    Your power decade. Scenario planning and optimization in the final 10 years.
+                </p>
+                <div class="screen-features">
+                    <span class="screen-feature">Future projections</span>
+                    <span class="screen-feature">Smart planning</span>
+                    <span class="screen-feature">Expert guidance</span>
+                </div>
+                <a href="screen-f-pre-retirement.html" class="screen-cta" onclick="event.stopPropagation()">
+                    <span>View Screen</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Screen G -->
+            <div class="screen-card" style="--accent-color: #429479; --badge-bg: #ECF9EE; --badge-color: #357A61;" onclick="window.open('screen-g-post-retirement.html', '_blank')">
+                <span class="screen-badge">Living Income</span>
+                <div class="screen-icon">🌴</div>
+                <div class="screen-stage">Screen G</div>
+                <h2 class="screen-title">Post-Retirement</h2>
+                <p class="screen-description">
+                    Living annuity with behavioral nudges for sustainable drawdown. Ongoing support.
+                </p>
+                <div class="screen-features">
+                    <span class="screen-feature">Monthly income</span>
+                    <span class="screen-feature">Sustainability tracking</span>
+                    <span class="screen-feature">Continued support</span>
+                </div>
+                <a href="screen-g-post-retirement.html" class="screen-cta" onclick="event.stopPropagation()">
+                    <span>View Screen</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Screen H -->
+            <div class="screen-card" style="--accent-color: #1A1A1A; --badge-bg: #F5F5F5; --badge-color: #1A1A1A;" onclick="window.open('screen-h-lifecycle-map.html', '_blank')">
+                <span class="screen-badge">Overview</span>
+                <div class="screen-icon">🗺️</div>
+                <div class="screen-stage">Screen H</div>
+                <h2 class="screen-title">Lifecycle Journey Map</h2>
+                <p class="screen-description">
+                    Visual timeline showing all 7 life stages in one view. The complete picture.
+                </p>
+                <div class="screen-features">
+                    <span class="screen-feature">Full timeline</span>
+                    <span class="screen-feature">Interactive stages</span>
+                    <span class="screen-feature">Value proposition</span>
+                </div>
+                <a href="screen-h-lifecycle-map.html" class="screen-cta" onclick="event.stopPropagation()">
+                    <span>View Screen</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Project Info -->
+        <div class="project-info">
+            <h2 class="project-info-title">About This Prototype</h2>
+            <p class="project-info-text">
+                This is a complete 8-screen concept demonstrating a behavior-led, AI-enabled engagement layer for Old Mutual members. The design shows how retirement and risk benefits can work together across a member's full lifetime—from onboarding to retirement and beyond—without changing core products, pricing, or distribution.
+            </p>
+            
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-item-label">Timeline</div>
+                    <div class="info-item-value">Feb 9-16, 2026</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-item-label">Purpose</div>
+                    <div class="info-item-value">SA Meetings</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-item-label">Status</div>
+                    <div class="info-item-value">Ready for Review</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-item-label">Design System</div>
+                    <div class="info-item-value">Old Mutual + Yu</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="page-footer">
+            <p class="page-footer-text">
+                <strong>Old Mutual ❤️ Yu</strong> • Unified Pensions + Risk Engagement Layer<br>
+                Concept created February 2026 • All 8 screens complete and linked
+            </p>
+        </div>
+    </div>
+</body>
+</html>

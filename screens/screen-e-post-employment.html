@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen E: Post-Employment Continuation - Old Mutual ❤️ Yu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Bariol', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F5F5F5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .screen {
+            width: 375px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            height: 92px;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.08);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 52px 24px 16px 24px;
+            z-index: 100;
+        }
+
+        .header-left {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .hamburger {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .hamburger svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .header-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .om-yu-lockup {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            height: 20px;
+        }
+
+        .om-text {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #1A1A1A;
+            letter-spacing: 0.5px;
+            line-height: 1;
+        }
+
+        .heart-separator {
+            font-size: 11px;
+            line-height: 1;
+        }
+
+        .yu-square {
+            width: 20px;
+            height: 20px;
+            background: #E30D76;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coin-count {
+            font-size: 18px;
+            color: #1A1A1A;
+            font-weight: 400;
+        }
+
+        .coin-icon {
+            width: 24px;
+            height: 24px;
+            background: #FFD600;
+            border-radius: 50%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #429479;
+            min-height: 240px;
+            border-radius: 0 0 16px 16px;
+            padding: 32px 24px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #E30D76 0%, #FF1B87 100%);
+            padding: 8px 16px;
+            border-radius: 20px;
+            align-self: flex-start;
+            box-shadow: 0 4px 12px rgba(227, 13, 118, 0.3);
+        }
+
+        .member-badge-icon {
+            font-size: 16px;
+        }
+
+        .member-badge-text {
+            font-size: 12px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 32px;
+            color: white;
+            max-width: 280px;
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: white;
+            opacity: 0.9;
+        }
+
+        /* Content Section */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 32px 24px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            color: #1A1A1A;
+        }
+
+        /* Status Banner */
+        .status-banner {
+            background: linear-gradient(135deg, #ECF9EE 0%, #F8FFF4 100%);
+            border: 2px solid #76B657;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .status-icon {
+            width: 48px;
+            height: 48px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .status-content {
+            flex: 1;
+        }
+
+        .status-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+            margin-bottom: 6px;
+        }
+
+        .status-text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        /* Benefit Cards */
+        .benefit-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .benefit-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .benefit-icon.retirement {
+            background: linear-gradient(135deg, #76B657 0%, #5BA348 100%);
+        }
+
+        .benefit-icon.protection {
+            background: linear-gradient(135deg, #429479 0%, #357A61 100%);
+        }
+
+        .benefit-text {
+            flex: 1;
+        }
+
+        .benefit-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #A0A09B;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            margin-bottom: 4px;
+        }
+
+        .benefit-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+        }
+
+        .benefit-value {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 32px;
+            color: #1A1A1A;
+        }
+
+        .benefit-status {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            background: #ECF9EE;
+            border-radius: 8px;
+        }
+
+        .benefit-status-icon {
+            color: #76B657;
+            font-size: 16px;
+        }
+
+        .benefit-status-text {
+            font-size: 13px;
+            font-weight: 700;
+            color: #76B657;
+        }
+
+        .benefit-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        /* New Options Section */
+        .option-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .option-card:hover {
+            border-color: #76B657;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .option-icon {
+            width: 40px;
+            height: 40px;
+            background: #FAFAFE;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .option-content {
+            flex: 1;
+        }
+
+        .option-title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            color: #1A1A1A;
+            margin-bottom: 4px;
+        }
+
+        .option-description {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #A0A09B;
+        }
+
+        .option-badge {
+            align-self: flex-start;
+            background: #FFF9E5;
+            color: #E65100;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        /* Continuity Message */
+        .continuity-box {
+            background: linear-gradient(135deg, #FFF3F8 0%, #FFFFFF 100%);
+            border: 2px solid #E30D76;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .continuity-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+            margin-bottom: 8px;
+        }
+
+        .continuity-text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        .continuity-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .continuity-feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .continuity-feature-icon {
+            font-size: 28px;
+        }
+
+        .continuity-feature-text {
+            font-size: 11px;
+            font-weight: 700;
+            color: #464647;
+            text-align: center;
+        }
+
+        /* Navigation Footer */
+        .nav-footer {
+            padding: 20px 24px;
+            background: #FAFAFE;
+            border-top: 1px solid #E3E3E1;
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-btn {
+            flex: 1;
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #464647;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .nav-btn:hover {
+            border-color: #76B657;
+            color: #76B657;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <div class="hamburger">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                        <line x1="3" y1="7" x2="21" y2="7"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="17" x2="21" y2="17"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="om-yu-lockup">
+                    <span class="om-text">OLD MUTUAL</span>
+                    <span class="heart-separator">❤️</span>
+                    <div class="yu-square">yu</div>
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="coin-count">2,502</span>
+                <div class="coin-icon"></div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="member-badge">
+                <span class="member-badge-icon">✨</span>
+                <span class="member-badge-text">MEMBER-FOR-LIFE</span>
+            </div>
+            <h1 class="hero-title">Your Old Mutual home</h1>
+            <p class="hero-subtitle">Now as an individual member—same relationship, same support</p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <!-- Status Banner -->
+            <div class="status-banner">
+                <div class="status-icon">✓</div>
+                <div class="status-content">
+                    <div class="status-title">Your transition is complete</div>
+                    <div class="status-text">Your benefits have been successfully preserved and are now active as individual policies.</div>
+                </div>
+            </div>
+
+            <!-- Your Preserved Benefits -->
+            <h2 class="section-title">Your preserved benefits</h2>
+
+            <div class="benefit-card">
+                <div class="benefit-header">
+                    <div class="benefit-icon retirement">💰</div>
+                    <div class="benefit-text">
+                        <div class="benefit-label">Retirement savings</div>
+                        <div class="benefit-title">Preserved pension</div>
+                    </div>
+                </div>
+                <div class="benefit-value">R75,193</div>
+                <div class="benefit-status">
+                    <span class="benefit-status-icon">✓</span>
+                    <span class="benefit-status-text">Growing tax-free until retirement</span>
+                </div>
+                <p class="benefit-description">
+                    Your pension continues to grow. You can make voluntary top-ups anytime to boost your retirement income.
+                </p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-header">
+                    <div class="benefit-icon protection">🛡️</div>
+                    <div class="benefit-text">
+                        <div class="benefit-label">Life & Disability</div>
+                        <div class="benefit-title">Continued protection</div>
+                    </div>
+                </div>
+                <div class="benefit-value">R850k cover</div>
+                <div class="benefit-status">
+                    <span class="benefit-status-icon">✓</span>
+                    <span class="benefit-status-text">Active and protecting your family</span>
+                </div>
+                <p class="benefit-description">
+                    Your cover didn't stop when you left employment. You and your family remain protected at the same level.
+                </p>
+            </div>
+
+            <!-- What's New -->
+            <h2 class="section-title">New options now available</h2>
+
+            <div class="option-card">
+                <div class="option-icon">📈</div>
+                <div class="option-content">
+                    <div class="option-title">Make voluntary contributions</div>
+                    <div class="option-description">Add to your retirement savings whenever you can</div>
+                </div>
+                <div class="option-badge">New</div>
+            </div>
+
+            <div class="option-card">
+                <div class="option-icon">🛡️</div>
+                <div class="option-content">
+                    <div class="option-title">Adjust your coverage</div>
+                    <div class="option-description">Increase or decrease protection as life changes</div>
+                </div>
+            </div>
+
+            <div class="option-card">
+                <div class="option-icon">💼</div>
+                <div class="option-content">
+                    <div class="option-title">Add income protection</div>
+                    <div class="option-description">Protect your income if you're self-employed</div>
+                </div>
+                <div class="option-badge">Popular</div>
+            </div>
+
+            <div class="option-card">
+                <div class="option-icon">🏥</div>
+                <div class="option-content">
+                    <div class="option-title">Medical aid options</div>
+                    <div class="option-description">Explore affordable health coverage</div>
+                </div>
+            </div>
+
+            <!-- Nothing Breaks Message -->
+            <div class="continuity-box">
+                <div class="continuity-title">Nothing breaks. Everything continues.</div>
+                <p class="continuity-text">
+                    Your relationship with Old Mutual doesn't end when you change jobs. We're here for life.
+                </p>
+                <div class="continuity-features">
+                    <div class="continuity-feature">
+                        <div class="continuity-feature-icon">📱</div>
+                        <div class="continuity-feature-text">Same dashboard</div>
+                    </div>
+                    <div class="continuity-feature">
+                        <div class="continuity-feature-icon">👤</div>
+                        <div class="continuity-feature-text">Same adviser</div>
+                    </div>
+                    <div class="continuity-feature">
+                        <div class="continuity-feature-icon">💚</div>
+                        <div class="continuity-feature-text">Same support</div>
+                    </div>
+                    <div class="continuity-feature">
+                        <div class="continuity-feature-icon">🔒</div>
+                        <div class="continuity-feature-text">Same security</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What's Next -->
+            <div style="background: #FAFAFE; border: 1px solid #E3E3E1; border-radius: 16px; padding: 20px; text-align: center;">
+                <p style="font-size: 14px; font-weight: 700; color: #1A1A1A; margin-bottom: 8px;">What happens next?</p>
+                <p style="font-size: 13px; color: #464647; line-height: 20px; margin-bottom: 16px;">
+                    You'll receive monthly statements, your adviser remains available, and you can adjust your benefits anytime through this app.
+                </p>
+                <button style="background: #76B657; color: white; border: none; border-radius: 8px; padding: 12px 24px; font-size: 14px; font-weight: 700; cursor: pointer; width: 100%;">
+                    Speak to your adviser
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <button class="nav-btn" onclick="window.open('screen-d-employee-exit.html', '_blank')">← Exit Journey</button>
+            <button class="nav-btn" onclick="window.open('screen-a-unified-home.html', '_blank')">Home</button>
+            <button class="nav-btn" onclick="window.open('index.html', '_blank')">All Screens</button>
+        </div>
+    </div>
+</body>
+</html>
