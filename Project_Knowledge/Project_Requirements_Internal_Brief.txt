@@ -1,0 +1,204 @@
+🎨 Design Brief (Refined): Old Mutual ❤️ Yu
+Unified Pensions + Risk Engagement Layer
+1. What we are designing (very clear)
+We are designing concept mock-up screens for a single, unified member experience where:
+Retirement (Pensions) + Risk benefits live together in one view
+
+
+Members can:
+
+
+Understand total value
+Make better choices over time
+Preserve and continue benefits when leaving employment
+Seamlessly upsell / cross-sell without friction or pressure
+
+
+The experience sits above the Old Mutual SuperFund
+
+
+Products, pricing, advisers and distribution remain unchanged
+
+
+This is a member-first engagement and intelligence layer, not a product engine.
+2. Brand & Naming
+Brand treatment
+Primary brand: Old Mutual
+Co-brand: ❤️ Yu (subtle but visible)
+Think: “Powered by Yu” rather than “YuLife takeover”
+
+
+Visual cues
+Old Mutual trust, warmth, stability
+Yu behavioural intelligence, nudges, clarity
+Clean, calm, human — never salesy
+
+
+3. Core Concept to Show Visually
+“One Financial Home”
+ Retirement + Risk + Protection + Continuation — across your working life and beyond.
+Every screen should reinforce:
+These benefits belong together
+They evolve with your life
+Old Mutual stays with you, even when your employer changes
+
+
+4. MUST-HAVE SCREENS (with explicit content)
+A. Unified Member Home (Anchor Screen)
+This is the most important screen.
+Show clearly:
+Retirement balance (pension)
+Risk protection (life, disability, funeral)
+Combined into one value view
+Simple language:
+
+
+“Your future income”
+“Your family protection”
+
+
+Small nudges:
+
+
+“One small change could improve your future”
+“You’re well protected — here’s why”
+
+
+Also show (lightly):
+Optional tiles:
+
+
+“Top up protection”
+“Add GAP cover”
+“Explore coaching / wellbeing”
+
+
+B. Active Employment – Smart Upsell & Cross-sell
+Purpose: Show how upsell happens — gently.
+Include:
+Contextual prompts (not product lists):
+
+
+“You’ve had a child — want to check your cover?”
+
+
+“Your income increased — should protection keep up?”
+
+
+Retirement + risk side-by-side
+
+
+Optional actions:
+
+
+Increase contribution
+Add / adjust risk
+
+
+Always optional, never forced
+
+
+C. Life Event / AI-Supported Insight Screen
+Purpose: Show intelligence, not complexity.
+Include:
+“Based on people like you…”
+
+
+Simple scenarios:
+
+
+“If nothing changes”
+“If you tweak one thing”
+
+
+Show impact across:
+
+
+Retirement outcome
+Risk adequacy
+
+
+No actuarial graphs — clean, human visuals.
+
+D. Employee Exit / Job Change Journey (CRITICAL)
+This screen must clearly show preservation + continuation.
+Show visually:
+“You’re leaving your employer — your benefits don’t have to leave you”
+
+
+Three paths (choice architecture):
+
+
+Preserve with Old Mutual (highlighted / default)
+Cash out (shown with consequences)
+Transfer elsewhere
+
+
+Explicitly include:
+Pension preservation
+Risk continuation (life / disability)
+Adviser still present and supported
+“Member-for-Life” positioning
+
+
+This is the highest economic value moment — treat it with care and simplicity.
+E. Continuation as an Individual (Post-Employment)
+Purpose: Show seamless transition.
+Include:
+“You’re no longer employed — here’s your new Old Mutual home”
+Same dashboard, same logic
+Retirement + risk still combined
+New optional products unlocked (if relevant)
+
+
+Key message: Nothing breaks.
+F. Pre- & Post-Retirement Guidance
+Purpose: Show longevity of relationship.
+Include:
+Pre-retirement:
+
+
+“You’re 10 years away — here’s what matters now”
+Contribution vs protection balance
+
+
+Post-retirement:
+
+
+Living Annuity / SuperFund continuation
+Sustainable drawdown nudges
+Ongoing engagement
+
+
+5. What Every Screen Should Implicitly Answer
+Each mock-up should silently answer:
+“Am I on track?”
+
+
+“Am I protected?”
+“What’s one simple thing I could do next?”
+“What happens when my job changes?”
+
+
+6. What NOT to Include (important)
+Do not design:
+Product brochures
+Pricing tables
+Underwriting journeys
+Adviser replacement flows
+Sales funnels
+
+
+This is outcomes + behaviour, not selling.
+7. Reference Context (for designer understanding)
+Umbrella funds dominate SA retirement
+Risk benefits naturally sit inside umbrella funds
+Preservation at exit is the single biggest value unlock
+Old Mutual already controls:
+
+Admin
+Capital
+Products
+
+9. One-Sentence Design North Star
+Design a single Old Mutual ❤️ Yu experience where pensions and risk live together, adapt through life events, preserve value at job change, and support members for life — without changing products or pricing.

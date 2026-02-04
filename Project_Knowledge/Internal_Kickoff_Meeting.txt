@@ -1,0 +1,40 @@
+### Old Mutual Partnership Opportunity
+
+- Potential major deal: $6-5M+ annually if rolled out to existing book
+- Moving from POC to deeper relationship with ~1M existing clients
+- Core offering to existing book + upsell to full version
+- Different from NN approach - more localized for South African market
+
+### Product Requirements & Focus Areas
+
+- Super Fund: Packaging pension and risk benefits together
+- Key objectives:
+  1. Increase member contributions through incentives
+  2. Retain members (prevent departures to competitors)
+  3. Cross-sell individual cover when employees leave
+  4. Enable flexible benefit adjustments up/down
+- Financial wellness focus across life stages
+- Move from product selling to lifetime value approach
+- ~15% of salary allocation across pensions, health, retirement, risk
+
+### Design Brief & Deliverables
+
+- Need 8 slides showing potential experience (similar to NN deck)
+- Timeline pressure: Hal visiting SA week of Feb 16th (potentially Feb 9th)
+- In-person meetings with Old Mutual key stakeholders planned
+- Approach: Create stimulus materials first, then workshop if deal progresses
+- Avoid extensive pre-work before financial commitment confirmed
+
+### Design Process & Tools
+
+- Amit to run brief through Pencil AI with Old Mutual branding
+- George (NN pension UX expert) could provide input but unavailable due to wife’s imminent birth
+- Jonathan considered for Pencil work but Amit can handle directly
+- Rough screens sufficient for initial presentation - doesn’t need to be final
+
+### Next Steps
+
+- Jaco to send additional brief document with Old Mutual’s specific requirements
+- Amit to create initial mockups with Old Mutual logos
+- Team to collaborate via Slack on iterations
+- Prepare materials for SA meetings (week of Feb 9th)

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen D: Employee Exit Journey - Old Mutual ❤️ Yu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Bariol', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F5F5F5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .screen {
+            width: 375px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            height: 92px;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.08);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 52px 24px 16px 24px;
+            z-index: 100;
+        }
+
+        .header-left {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .hamburger, .notification {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hamburger svg, .notification svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .header-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .om-yu-lockup {
+            height: 24px;
+            width: auto;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coin-count {
+            font-size: 18px;
+            color: #1A1A1A;
+            font-weight: 400;
+        }
+
+        .coin-icon {
+            width: 24px;
+            height: 24px;
+            background: #FFD600;
+            border-radius: 50%;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            margin-top: -40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero {
+            background: #429479;
+            height: 260px;
+            border-radius: 0 0 16px 16px;
+            position: relative;
+            padding: 116px 24px 24px 24px;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .om-logo-small {
+            width: 112px;
+            height: 24px;
+            filter: brightness(0) invert(1);
+        }
+
+        .hero-title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 1px;
+            color: white;
+            max-width: 250px;
+        }
+
+        .hero-illustration {
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 200px;
+            opacity: 0.3;
+        }
+
+        /* Description Card */
+        .description-card {
+            background: #FAFAFE;
+            border: 1px solid #E3E3E1;
+            border-radius: 0 0 16px 16px;
+            padding: 24px 24px 16px 24px;
+            margin-top: -8px;
+        }
+
+        .description-text {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.6px;
+            color: #1A1A1A;
+        }
+
+        /* Content Section */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 0 24px;
+            margin-top: 32px;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: #ECF9EE;
+            border: 1px solid #76B657;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .info-icon {
+            width: 32px;
+            height: 32px;
+            background: #76B657;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .info-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+            margin-bottom: 8px;
+        }
+
+        .info-text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        /* What's Protected Section */
+        .protected-section {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .protected-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+            margin-bottom: 16px;
+        }
+
+        .protected-items {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .protected-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #FAFAFE;
+            border-radius: 8px;
+        }
+
+        .protected-item-icon {
+            width: 40px;
+            height: 40px;
+            background: #76B657;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .protected-item-content {
+            flex: 1;
+        }
+
+        .protected-item-label {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            color: #A0A09B;
+        }
+
+        .protected-item-value {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.6px;
+            color: #1A1A1A;
+        }
+
+        /* Choice Cards Section */
+        .choice-section-title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            color: #1A1A1A;
+        }
+
+        .choices {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .choice-card {
+            border: 2px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .choice-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .choice-card.recommended {
+            border: 2px solid #E3E3E1;
+            background: white;
+        }
+
+        .choice-card.warning {
+            border: 2px solid #E3E3E1;
+        }
+
+        .recommended-badge {
+            background: #76B657;
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 12px;
+            letter-spacing: 0.4px;
+            padding: 6px 12px;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .choice-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding-right: 40px;
+        }
+
+        .choice-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .choice-card.recommended .choice-icon {
+            background: #76B657;
+        }
+
+        .choice-card.warning .choice-icon {
+            background: #FFD600;
+        }
+
+        .choice-card.neutral .choice-icon {
+            background: #E3E3E1;
+        }
+
+        .choice-content {
+            flex: 1;
+            max-width: calc(100% - 60px);
+        }
+
+        .choice-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+            margin-bottom: 4px;
+            word-wrap: break-word;
+        }
+
+        .choice-subtitle {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            color: #A0A09B;
+        }
+
+        .choice-details {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .choice-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        .check-icon {
+            width: 20px;
+            height: 20px;
+            background: #76B657;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+
+        .x-icon {
+            width: 20px;
+            height: 20px;
+            background: #E3E3E1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #A0A09B;
+            font-size: 12px;
+        }
+
+        .warning-box {
+            background: rgba(255, 214, 0, 0.1);
+            border: 1px solid #FFD600;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 12px;
+        }
+
+        .warning-text {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            color: #464647;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            background: #76B657;
+            color: white;
+            border: none;
+            border-radius: 16px;
+            padding: 16px 24px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.6px;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0px 4px 0px 0px rgba(66, 148, 121, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background: #5BA348;
+            transform: translateY(-2px);
+            box-shadow: 0px 6px 0px 0px rgba(66, 148, 121, 0.3);
+        }
+
+        .cta-button:active {
+            transform: translateY(2px);
+            box-shadow: 0px 2px 0px 0px rgba(66, 148, 121, 0.3);
+        }
+
+        /* Support Section */
+        .support-section {
+            background: #FAFAFE;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .support-icon {
+            width: 48px;
+            height: 48px;
+            background: white;
+            border: 2px solid #E3E3E1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .support-content {
+            flex: 1;
+        }
+
+        .support-title {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            color: #1A1A1A;
+            margin-bottom: 4px;
+        }
+
+        .support-text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            color: #A0A09B;
+        }
+
+        .member-badge {
+            background: linear-gradient(135deg, #E30D76 0%, #C90B64 100%);
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 12px;
+            letter-spacing: 0.4px;
+            padding: 6px 12px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 16px;
+        }
+
+        .radio-circle {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #E3E3E1;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Active State */
+        .choice-card.active {
+            border-width: 3px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+
+        .choice-card.active .radio-circle {
+            background: #429479;
+            border-color: #429479;
+        }
+
+        .choice-card.active .radio-circle::after {
+            content: '✓';
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .choice-card.recommended.active {
+            border-color: #76B657;
+            background: linear-gradient(135deg, #ECF9EE 0%, #FFFFFF 100%);
+        }
+
+        .choice-card.recommended.active .radio-circle {
+            background: #76B657;
+            border-color: #76B657;
+        }
+
+        .choice-card.warning.active {
+            border-color: #FFD600;
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFFFFF 100%);
+        }
+
+        .choice-card.warning.active .radio-circle {
+            background: #FFD600;
+            border-color: #FFD600;
+        }
+
+        .choice-card.neutral.active {
+            border-color: #429479;
+            background: linear-gradient(135deg, #E6F5F0 0%, #FFFFFF 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <div class="hamburger">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                        <line x1="3" y1="7" x2="21" y2="7"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="17" x2="21" y2="17"/>
+                    </svg>
+                </div>
+                <div class="notification">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-center">
+                <img src="om-yu-logo.png" alt="Old Mutual ❤️ yu" class="om-yu-lockup">
+            </div>
+            <div class="header-right">
+                <span class="coin-count">2,502</span>
+                <div class="coin-icon"></div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero">
+                <div class="hero-illustration">
+                    <!-- Decorative illustration placeholder -->
+                    <svg viewBox="0 0 200 200" fill="none">
+                        <circle cx="100" cy="100" r="80" fill="white" opacity="0.2"/>
+                        <circle cx="100" cy="100" r="60" fill="white" opacity="0.3"/>
+                    </svg>
+                </div>
+                <div class="hero-content">
+                    <svg class="om-logo-small" viewBox="0 0 112 24">
+                        <text x="0" y="18" font-family="Arial" font-size="12" font-weight="700" fill="white">OLD MUTUAL</text>
+                    </svg>
+                    <h1 class="hero-title">You're leaving your employer</h1>
+                </div>
+            </div>
+            <div class="description-card">
+                <p class="description-text">Your benefits don't have to leave you. Keep your pension and protection with Old Mutual.</p>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <!-- Info Box -->
+            <div class="info-box">
+                <div class="info-icon">i</div>
+                <div class="info-content">
+                    <div class="info-title">What happens next?</div>
+                    <p class="info-text">You have options for your pension and risk cover. Take your time to choose what works best for you.</p>
+                </div>
+            </div>
+
+            <!-- What's Protected -->
+            <div class="protected-section">
+                <h3 class="protected-title">What you've built so far</h3>
+                <div class="protected-items">
+                    <div class="protected-item">
+                        <div class="protected-item-icon">💰</div>
+                        <div class="protected-item-content">
+                            <div class="protected-item-label">YOUR PENSION</div>
+                            <div class="protected-item-value">R75 193,54</div>
+                        </div>
+                    </div>
+                    <div class="protected-item">
+                        <div class="protected-item-icon">🛡️</div>
+                        <div class="protected-item-content">
+                            <div class="protected-item-label">LIFE COVER</div>
+                            <div class="protected-item-value">R850,000</div>
+                        </div>
+                    </div>
+                    <div class="protected-item">
+                        <div class="protected-item-icon">💚</div>
+                        <div class="protected-item-content">
+                            <div class="protected-item-label">DISABILITY COVER</div>
+                            <div class="protected-item-value">R425,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Choice Cards -->
+            <h2 class="choice-section-title">Choose what works for you</h2>
+
+            <div class="choices">
+                <!-- Option 1: Preserve with Old Mutual (RECOMMENDED) -->
+                <div class="choice-card recommended">
+                    <div class="radio-circle"></div>
+                    <div class="recommended-badge">✓ RECOMMENDED</div>
+                    <div class="choice-header">
+                        <div class="choice-icon">🏠</div>
+                        <div class="choice-content">
+                            <div class="choice-title">Stay with Old Mutual</div>
+                            <div class="choice-subtitle">Member-for-Life protection</div>
+                        </div>
+                    </div>
+                    <div class="choice-details">
+                        <div class="choice-detail-item">
+                            <span class="check-icon">✓</span>
+                            <span>Keep your full pension value</span>
+                        </div>
+                        <div class="choice-detail-item">
+                            <span class="check-icon">✓</span>
+                            <span>Continue your life & disability cover</span>
+                        </div>
+                        <div class="choice-detail-item">
+                            <span class="check-icon">✓</span>
+                            <span>Your adviser stays with you</span>
+                        </div>
+                        <div class="choice-detail-item">
+                            <span class="check-icon">✓</span>
+                            <span>No paperwork, seamless transition</span>
+                        </div>
+                    </div>
+                    <div class="member-badge">
+                        ❤️ MEMBER-FOR-LIFE
+                    </div>
+                </div>
+
+                <!-- Option 2: Cash Out (WARNING) -->
+                <div class="choice-card warning">
+                    <div class="radio-circle"></div>
+                    <div class="choice-header">
+                        <div class="choice-icon">💸</div>
+                        <div class="choice-content">
+                            <div class="choice-title">Cash out</div>
+                            <div class="choice-subtitle">Take your money now</div>
+                        </div>
+                    </div>
+                    <div class="choice-details">
+                        <div class="choice-detail-item">
+                            <span class="x-icon">✗</span>
+                            <span>Up to 36% lost to tax</span>
+                        </div>
+                        <div class="choice-detail-item">
+                            <span class="x-icon">✗</span>
+                            <span>Lose your life & disability cover</span>
+                        </div>
+                        <div class="choice-detail-item">
+                            <span class="x-icon">✗</span>
+                            <span>Retirement savings reduced</span>
+                        </div>
+                    </div>
+                    <div class="warning-box">
+                        <div class="warning-text">⚠️ Most people who cash out wish they hadn't. R75k today could be worth R450k+ at retirement.</div>
+                    </div>
+                </div>
+
+                <!-- Option 3: Transfer Elsewhere (NEUTRAL) -->
+                <div class="choice-card neutral">
+                    <div class="radio-circle"></div>
+                    <div class="choice-header">
+                        <div class="choice-icon">📤</div>
+                        <div class="choice-content">
+                            <div class="choice-title">Transfer to another fund</div>
+                            <div class="choice-subtitle">Move to a different provider</div>
+                        </div>
+                    </div>
+                    <div class="choice-details">
+                        <div class="choice-detail-item">
+                            <span class="check-icon">✓</span>
+                            <span>Keep your pension value</span>
+                        </div>
+                        <div class="choice-detail-item">
+                            <span class="x-icon">✗</span>
+                            <span>Lose your current life & disability cover</span>
+                        </div>
+                        <div class="choice-detail-item">
+                            <span class="x-icon">✗</span>
+                            <span>May require new medical underwriting</span>
+                        </div>
+                        <div class="choice-detail-item">
+                            <span class="x-icon">✗</span>
+                            <span>Additional paperwork required</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Section -->
+            <div class="support-section">
+                <div class="support-icon">👤</div>
+                <div class="support-content">
+                    <div class="support-title">Need help deciding?</div>
+                    <p class="support-text">Your adviser is here to guide you through your options at no extra cost.</p>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="cta-button">Continue with Old Mutual</button>
+        </div>
+    </div>
+
+    <script>
+        // Get all choice cards
+        const choiceCards = document.querySelectorAll('.choice-card');
+        const ctaButton = document.querySelector('.cta-button');
+
+        // Button text options based on selection
+        const buttonText = {
+            'recommended': 'Continue with Old Mutual',
+            'warning': 'Cash out my pension',
+            'neutral': 'Transfer to another fund'
+        };
+
+        // Add click event to each card
+        choiceCards.forEach(card => {
+            card.addEventListener('click', function() {
+                // Remove active class from all cards
+                choiceCards.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked card
+                this.classList.add('active');
+
+                // Update CTA button text based on selection
+                if (this.classList.contains('recommended')) {
+                    ctaButton.textContent = buttonText.recommended;
+                } else if (this.classList.contains('warning')) {
+                    ctaButton.textContent = buttonText.warning;
+                } else if (this.classList.contains('neutral')) {
+                    ctaButton.textContent = buttonText.neutral;
+                }
+            });
+        });
+
+        // Set the recommended option as active by default
+        document.querySelector('.choice-card.recommended').classList.add('active');
+    </script>
+</body>
+</html>

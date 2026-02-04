@@ -1,0 +1,29 @@
+Ahead of our discussion, I wanted to briefly summarise the design focus for the session.
+
+The intent is to design a behaviour-led, AI-enabled engagement layer that helps members optimise the ~15% of payroll typically allocated to retirement and risk benefits across their full lifetime — including job changes, preservation, continuation and post-retirement — without changing core products, pricing or distribution.
+
+Member lifecycle focus:
+
+Onboarding & early career: Making total reward and protection value visible; building good habits early.
+
+Active employment: Ongoing financial-wellness journeys, with contextual upsell and cross-sell (risk, GAP, coaching) driven by life events rather than sales pressure.
+
+Job change / exit (critical): Proactive, simple preservation journeys that reduce cash-out leakage and enable seamless continuation into Old Mutual Member-for-Life solutions, with brokers and advisers supported rather than bypassed.
+
+Pre-retirement: AI-assisted education and scenario guidance to improve decision quality.
+
+Post-retirement: Continued engagement via SuperFund / Living Annuity solutions, supporting sustainable drawdown behaviour.
+
+From a light actuarial lens, the session would focus on:
+
+Preservation at exit as the highest EV-impact moment, where small behavioural improvements drive increased lifetime value
+
+Better engagement during employment to improve risk optimisation and experience
+
+Behavioural and AI-supported journeys that improve contribution and retirement choices without changing product economics
+
+Contextual continuation, upsell and cross-sell that increase lifetime value through duration, not pricing
+
+Simpler journeys for members, employers and brokers to reduce leakage and friction
+
+In short, this is not about changing products or pricing, but about designing a member-first engagement layer that improves preservation, protection and retirement outcomes across the payroll already being spent.
