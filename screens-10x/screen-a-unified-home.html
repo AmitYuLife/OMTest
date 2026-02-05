@@ -625,6 +625,368 @@
             opacity: 1;
         }
 
+        /* Beneficiaries Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background: white;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            animation: modalSlideIn 0.3s ease-out;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid #E3E3E1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1E3B70;
+            margin: 0;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 32px;
+            color: #929CAA;
+            cursor: pointer;
+            padding: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.2s;
+        }
+
+        .modal-close:hover {
+            color: #1A1A1A;
+        }
+
+        .modal-body {
+            padding: 24px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .beneficiaries-info {
+            background: #EFF4F8;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 20px;
+        }
+
+        .beneficiaries-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .beneficiary-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 12px;
+            padding: 16px;
+            transition: all 0.2s;
+        }
+
+        .beneficiary-card:hover {
+            border-color: #3FAACF;
+            box-shadow: 0 2px 8px rgba(63, 170, 207, 0.1);
+        }
+
+        .beneficiary-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .beneficiary-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #EFF4F8 0%, #FFFFFF 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .beneficiary-info {
+            flex: 1;
+        }
+
+        .beneficiary-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1E3B70;
+            margin-bottom: 2px;
+        }
+
+        .beneficiary-relationship {
+            font-size: 12px;
+            color: #6B6B6B;
+        }
+
+        .beneficiary-percentage {
+            font-size: 18px;
+            font-weight: 700;
+            color: #3FAACF;
+        }
+
+        .beneficiary-details {
+            background: #FAFAFE;
+            border-radius: 8px;
+            padding: 10px 12px;
+            margin-bottom: 12px;
+        }
+
+        .beneficiary-detail-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 0;
+        }
+
+        .beneficiary-detail-row + .beneficiary-detail-row {
+            border-top: 1px solid #E3E3E1;
+            padding-top: 8px;
+            margin-top: 4px;
+        }
+
+        .detail-label {
+            font-size: 11px;
+            color: #929CAA;
+            font-weight: 600;
+        }
+
+        .detail-value {
+            font-size: 12px;
+            color: #1A1A1A;
+            font-weight: 600;
+        }
+
+        .beneficiary-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .beneficiary-edit-btn,
+        .beneficiary-remove-btn {
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .beneficiary-edit-btn {
+            background: white;
+            border: 1px solid #3FAACF;
+            color: #3FAACF;
+        }
+
+        .beneficiary-edit-btn:hover {
+            background: #3FAACF;
+            color: white;
+        }
+
+        .beneficiary-remove-btn {
+            background: white;
+            border: 1px solid #E3E3E1;
+            color: #929CAA;
+        }
+
+        .beneficiary-remove-btn:hover {
+            background: #FFF3E0;
+            border-color: #E65100;
+            color: #E65100;
+        }
+
+        .beneficiary-edit-form {
+            padding: 8px 0;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: #1E3B70;
+            margin-bottom: 6px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #E3E3E1;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: 'Bariol', sans-serif;
+            color: #1A1A1A;
+            transition: all 0.2s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #3FAACF;
+            box-shadow: 0 0 0 3px rgba(63, 170, 207, 0.1);
+        }
+
+        .beneficiary-edit-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .beneficiary-cancel-btn,
+        .beneficiary-save-btn {
+            flex: 1;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .beneficiary-cancel-btn {
+            background: white;
+            border: 1px solid #E3E3E1;
+            color: #464647;
+        }
+
+        .beneficiary-cancel-btn:hover {
+            background: #FAFAFE;
+        }
+
+        .beneficiary-save-btn {
+            background: #3FAACF;
+            border: none;
+            color: white;
+        }
+
+        .beneficiary-save-btn:hover {
+            background: #2E8FB8;
+        }
+
+        .add-beneficiary-btn {
+            width: 100%;
+            padding: 12px;
+            background: white;
+            border: 2px dashed #3FAACF;
+            border-radius: 8px;
+            color: #3FAACF;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.2s;
+        }
+
+        .add-beneficiary-btn:hover {
+            background: #EFF4F8;
+            border-color: #2E8FB8;
+            color: #2E8FB8;
+        }
+
+        .allocation-summary {
+            background: linear-gradient(135deg, #EFF4F8 0%, #FFFFFF 100%);
+            border: 1px solid #3FAACF;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+
+        .allocation-warning {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #E65100;
+            font-weight: 600;
+        }
+
+        .modal-footer {
+            padding: 16px 24px;
+            border-top: 1px solid #E3E3E1;
+            display: flex;
+            gap: 12px;
+        }
+
+        .modal-btn-secondary,
+        .modal-btn-primary {
+            flex: 1;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .modal-btn-secondary {
+            background: white;
+            border: 1px solid #E3E3E1;
+            color: #464647;
+        }
+
+        .modal-btn-secondary:hover {
+            background: #FAFAFE;
+        }
+
+        .modal-btn-primary {
+            background: #3FAACF;
+            border: none;
+            color: white;
+        }
+
+        .modal-btn-primary:hover {
+            background: #2E8FB8;
+        }
 
     </style>
 </head>
@@ -853,7 +1215,7 @@
                     
                     <div class="card-actions">
                         <button class="card-action-btn" onclick="event.stopPropagation();">View certificate</button>
-                        <button class="card-action-btn" onclick="event.stopPropagation();">Update beneficiaries</button>
+                        <button class="card-action-btn" id="updateBeneficiariesBtn" onclick="event.stopPropagation(); openBeneficiariesModal();">Update beneficiaries</button>
                         <button class="card-action-btn" onclick="event.stopPropagation();">Submit claim</button>
                     </div>
                 </div>
@@ -950,5 +1312,264 @@
         </div>
 
     </div>
+
+    <!-- Beneficiaries Modal -->
+    <div id="beneficiariesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Your beneficiaries</h2>
+                <button class="modal-close" onclick="closeBeneficiariesModal()">×</button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="beneficiaries-info">
+                    <div style="font-size: 13px; color: #6B6B6B; line-height: 19px; margin-bottom: 16px;">
+                        Your life cover of <strong>R850k</strong> will be paid to these beneficiaries. Make sure this list is up to date.
+                    </div>
+                </div>
+
+                <div id="beneficiariesList" class="beneficiaries-list">
+                    <!-- Beneficiaries will be dynamically inserted here -->
+                </div>
+
+                <button class="add-beneficiary-btn" onclick="addNewBeneficiary()">
+                    <span style="font-size: 18px;">+</span> Add beneficiary
+                </button>
+
+                <div class="allocation-summary">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 13px; font-weight: 600; color: #1E3B70;">Total allocation:</span>
+                        <span id="totalAllocation" style="font-size: 16px; font-weight: 700; color: #1E3B70;">100%</span>
+                    </div>
+                    <div id="allocationWarning" class="allocation-warning" style="display: none;">
+                        ⚠️ Total must equal 100%
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="modal-btn-secondary" onclick="closeBeneficiariesModal()">Cancel</button>
+                <button class="modal-btn-primary" onclick="saveBeneficiaries()">Save changes</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample beneficiary data
+        let beneficiaries = [
+            {
+                id: 1,
+                name: 'Sarah Nkosi',
+                relationship: 'Spouse',
+                idNumber: '8506150234088',
+                contact: '082 345 6789',
+                percentage: 60
+            },
+            {
+                id: 2,
+                name: 'Thabo Nkosi',
+                relationship: 'Child',
+                idNumber: '1503250234089',
+                contact: '',
+                percentage: 20
+            },
+            {
+                id: 3,
+                name: 'Zanele Nkosi',
+                relationship: 'Child',
+                idNumber: '1806180234090',
+                contact: '',
+                percentage: 20
+            }
+        ];
+
+        let nextBeneficiaryId = 4;
+        let editingBeneficiaryId = null;
+
+        function openBeneficiariesModal() {
+            document.getElementById('beneficiariesModal').style.display = 'flex';
+            renderBeneficiaries();
+            updateTotalAllocation();
+        }
+
+        function closeBeneficiariesModal() {
+            document.getElementById('beneficiariesModal').style.display = 'none';
+            editingBeneficiaryId = null;
+        }
+
+        function renderBeneficiaries() {
+            const list = document.getElementById('beneficiariesList');
+            list.innerHTML = beneficiaries.map(b => `
+                <div class="beneficiary-card" id="beneficiary-${b.id}">
+                    <div class="beneficiary-header">
+                        <div class="beneficiary-icon">${getRelationshipIcon(b.relationship)}</div>
+                        <div class="beneficiary-info">
+                            <div class="beneficiary-name">${b.name}</div>
+                            <div class="beneficiary-relationship">${b.relationship}</div>
+                        </div>
+                        <div class="beneficiary-percentage">${b.percentage}%</div>
+                    </div>
+                    <div class="beneficiary-details">
+                        <div class="beneficiary-detail-row">
+                            <span class="detail-label">ID Number:</span>
+                            <span class="detail-value">${b.idNumber}</span>
+                        </div>
+                        ${b.contact ? `
+                        <div class="beneficiary-detail-row">
+                            <span class="detail-label">Contact:</span>
+                            <span class="detail-value">${b.contact}</span>
+                        </div>
+                        ` : ''}
+                    </div>
+                    <div class="beneficiary-actions">
+                        <button class="beneficiary-edit-btn" onclick="editBeneficiary(${b.id})">Edit</button>
+                        <button class="beneficiary-remove-btn" onclick="removeBeneficiary(${b.id})">Remove</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function getRelationshipIcon(relationship) {
+            const icons = {
+                'Spouse': '💑',
+                'Child': '👶',
+                'Parent': '👴',
+                'Sibling': '🤝',
+                'Partner': '💑',
+                'Other': '👤'
+            };
+            return icons[relationship] || '👤';
+        }
+
+        function editBeneficiary(id) {
+            const beneficiary = beneficiaries.find(b => b.id === id);
+            if (!beneficiary) return;
+
+            editingBeneficiaryId = id;
+            const card = document.getElementById(`beneficiary-${id}`);
+            
+            card.innerHTML = `
+                <div class="beneficiary-edit-form">
+                    <div class="form-group">
+                        <label class="form-label">Full name</label>
+                        <input type="text" class="form-input" id="edit-name-${id}" value="${beneficiary.name}" placeholder="Full legal name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Relationship</label>
+                        <select class="form-input" id="edit-relationship-${id}">
+                            <option value="Spouse" ${beneficiary.relationship === 'Spouse' ? 'selected' : ''}>Spouse</option>
+                            <option value="Child" ${beneficiary.relationship === 'Child' ? 'selected' : ''}>Child</option>
+                            <option value="Parent" ${beneficiary.relationship === 'Parent' ? 'selected' : ''}>Parent</option>
+                            <option value="Sibling" ${beneficiary.relationship === 'Sibling' ? 'selected' : ''}>Sibling</option>
+                            <option value="Partner" ${beneficiary.relationship === 'Partner' ? 'selected' : ''}>Partner</option>
+                            <option value="Other" ${beneficiary.relationship === 'Other' ? 'selected' : ''}>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">ID Number</label>
+                        <input type="text" class="form-input" id="edit-idNumber-${id}" value="${beneficiary.idNumber}" placeholder="SA ID Number">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Contact number (optional)</label>
+                        <input type="text" class="form-input" id="edit-contact-${id}" value="${beneficiary.contact || ''}" placeholder="082 123 4567">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Percentage allocation</label>
+                        <input type="number" class="form-input" id="edit-percentage-${id}" value="${beneficiary.percentage}" min="0" max="100" placeholder="0-100%">
+                    </div>
+                    <div class="beneficiary-edit-actions">
+                        <button class="beneficiary-cancel-btn" onclick="cancelEdit()">Cancel</button>
+                        <button class="beneficiary-save-btn" onclick="saveEdit(${id})">Save</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function saveEdit(id) {
+            const beneficiary = beneficiaries.find(b => b.id === id);
+            if (!beneficiary) return;
+
+            beneficiary.name = document.getElementById(`edit-name-${id}`).value;
+            beneficiary.relationship = document.getElementById(`edit-relationship-${id}`).value;
+            beneficiary.idNumber = document.getElementById(`edit-idNumber-${id}`).value;
+            beneficiary.contact = document.getElementById(`edit-contact-${id}`).value;
+            beneficiary.percentage = parseInt(document.getElementById(`edit-percentage-${id}`).value) || 0;
+
+            editingBeneficiaryId = null;
+            renderBeneficiaries();
+            updateTotalAllocation();
+        }
+
+        function cancelEdit() {
+            editingBeneficiaryId = null;
+            renderBeneficiaries();
+        }
+
+        function removeBeneficiary(id) {
+            if (confirm('Are you sure you want to remove this beneficiary?')) {
+                beneficiaries = beneficiaries.filter(b => b.id !== id);
+                renderBeneficiaries();
+                updateTotalAllocation();
+            }
+        }
+
+        function addNewBeneficiary() {
+            const newBeneficiary = {
+                id: nextBeneficiaryId++,
+                name: '',
+                relationship: 'Spouse',
+                idNumber: '',
+                contact: '',
+                percentage: 0
+            };
+            beneficiaries.push(newBeneficiary);
+            renderBeneficiaries();
+            editBeneficiary(newBeneficiary.id);
+        }
+
+        function updateTotalAllocation() {
+            const total = beneficiaries.reduce((sum, b) => sum + b.percentage, 0);
+            const totalEl = document.getElementById('totalAllocation');
+            const warningEl = document.getElementById('allocationWarning');
+            
+            totalEl.textContent = total + '%';
+            
+            if (total === 100) {
+                totalEl.style.color = '#00C48C';
+                warningEl.style.display = 'none';
+            } else {
+                totalEl.style.color = '#E65100';
+                warningEl.style.display = 'block';
+            }
+        }
+
+        function saveBeneficiaries() {
+            const total = beneficiaries.reduce((sum, b) => sum + b.percentage, 0);
+            
+            if (total !== 100) {
+                alert('Total allocation must equal 100%. Currently: ' + total + '%');
+                return;
+            }
+
+            // Validate all required fields
+            const invalidBeneficiaries = beneficiaries.filter(b => !b.name || !b.idNumber);
+            if (invalidBeneficiaries.length > 0) {
+                alert('Please fill in all required fields (Name and ID Number) for all beneficiaries.');
+                return;
+            }
+
+            // In a real app, this would save to backend
+            alert('Beneficiaries updated successfully! ✓');
+            closeBeneficiariesModal();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('beneficiariesModal');
+            if (event.target === modal) {
+                closeBeneficiariesModal();
+            }
+        }
+    </script>
 </body>
 </html>
