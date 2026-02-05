@@ -31,12 +31,6 @@ This is a complete suite of interactive prototypes showcasing the 10X ❤️ Yu 
    - Shows "Preserve with 10X" as recommended option
    - Yu risk continuation as individual cover
 
-3. **Screen H: Full Lifecycle Journey Map** ⭐
-   - File: `screen-h-lifecycle-map.html`
-   - Visual timeline showing full member journey
-   - 10X products at each life stage
-   - Yu risk throughout
-
 ### Supporting Screens
 
 4. **Screen B: Active Employment Upsell**
@@ -108,7 +102,7 @@ This is a complete suite of interactive prototypes showcasing the 10X ❤️ Yu 
 Open `index.html` in your browser to see the complete navigation.
 
 ### Demo Flow for COO Meeting
-**Recommended 3-screen demo** (10-15 minutes):
+**Recommended 2-screen demo** (10-15 minutes):
 
 1. Start with **Screen A** (Home)
    - Shows unified experience
@@ -119,17 +113,14 @@ Open `index.html` in your browser to see the complete navigation.
    - Shows preservation at critical moment
    - Explicit fee comparison (10X vs competitors)
    - Clear value proposition
+   - **This is the most important screen**
 
-3. Finish with **Screen H** (Lifecycle Map)
-   - Shows full journey and relationship
-   - All products across life stages
-   - Complete opportunity visualization
-
-**Why these 3?**
+**Why these 2?**
 - Tells complete story in minimal time
 - Highlights 10X's key differentiator (fees)
 - Shows Yu's role (risk + engagement)
 - Demonstrates tech-enabled experience
+- Can walk through other screens if COO asks specific questions
 
 ---
 
@@ -218,7 +209,6 @@ Open `index.html` in your browser to see the complete navigation.
 ├── screen-e-post-employment.html    # Post-employment
 ├── screen-f-pre-retirement.html     # Pre-retirement
 ├── screen-g-post-retirement.html    # Living annuity
-├── screen-h-lifecycle-map.html      # Full journey ⭐
 ├── 10X_BRAND_CONSTANTS.md           # Brand guidelines
 └── README_10X.md                    # This file
 ```

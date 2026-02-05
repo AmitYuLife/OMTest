@@ -101,11 +101,6 @@
                 │ Post-Ret  │
                 │ Engage    │
                 └───────────┘
-                      │
-                ┌─────▼─────┐
-                │ Screen H  │
-                │ [TBD]     │
-                └───────────┘
 ```
 
 ---
@@ -222,13 +217,6 @@ All spacing follows **8px grid**:
 - ⏳ Screen E: Individual Continuation
 - ⏳ Screen F: Pre-Retirement Guidance
 - ⏳ Screen G: Post-Retirement Engagement
-
-### Phase 3: Final Screen (Week 2)
-- ⏳ Screen H: [Choose one]
-  - Option 1: Full Lifecycle Journey Map
-  - Option 2: Adviser/Broker Collaboration View
-  - Option 3: AI Insights Dashboard
-  - Option 4: Member Success Story
 
 ### Phase 4: Integration & Polish (Week 3)
 - Prototype connections between screens
@@ -419,12 +407,11 @@ Before considering any screen "done":
 
 ### Short-term (Next Week):
 1. ⏳ Complete Screens B, C, E, F, G
-2. ⏳ Decide on Screen H approach
-3. ⏳ Create prototype flows
-4. ⏳ Prepare presentation deck
+2. ⏳ Create prototype flows
+3. ⏳ Prepare presentation deck
 
 ### Before SA Meetings (Feb 9-16):
-1. ⏳ All 8 screens complete
+1. ⏳ All 7 screens complete
 2. ⏳ Clickable prototype ready
 3. ⏳ Presentation materials finalized
 4. ⏳ Talking points prepared

@@ -16,7 +16,6 @@ You now have **complete, ready-to-demo 10X prototypes** adapted from the Old Mut
 **Priority screens for COO meeting**:
 1. `screen-a-unified-home.html` - Home dashboard with fee savings
 2. `screen-d-employee-exit.html` - ⭐ CRITICAL - Fee comparison (R186k savings)
-3. `screen-h-lifecycle-map.html` - Full journey visualization
 
 ---
 
@@ -67,14 +66,13 @@ You now have **complete, ready-to-demo 10X prototypes** adapted from the Old Mut
 
 ## ⚡ **Quick Start for COO Meeting**
 
-### Option 1: 3-Screen Demo (10 minutes) - RECOMMENDED
+### Option 1: 2-Screen Demo (10 minutes) - RECOMMENDED
 1. Open `screens-10x/index.html`
 2. Show Screen A (Home) - unified experience
 3. Show Screen D (Exit) - **THE MONEY SHOT** with R186k fee savings
-4. Show Screen H (Lifecycle) - full journey
 
 ### Option 2: Full Walkthrough (30 minutes)
-Walk through all 8 screens from index.html
+Walk through all 7 screens from index.html
 
 ---
 

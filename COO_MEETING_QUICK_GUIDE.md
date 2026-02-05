@@ -35,12 +35,9 @@ Partnership to package 10X umbrella fund solutions with Yu's group risk products
 - Yu risk continues as individual cover
 - Zero fees for first 6 months intro offer
 
-### 4. Click Screen H (Lifecycle)
-**Show**: Full journey timeline  
-**Say**: "Complete lifecycle—from employment through retirement."  
-**Point out**: 10X products at each stage, Yu risk throughout
+**Done!** 5-10 minutes. Story told.
 
-**Done!** 10 minutes. Story told.
+**Have other screens ready** if COO wants to see specific stages (Screens B-G available for deeper dive).
 
 ---
 
@@ -114,7 +111,6 @@ This is your differentiator. This is why members preserve with 10X. This is the 
 **Priority screens**:
 1. `screen-a-unified-home.html`
 2. `screen-d-employee-exit.html` ⭐
-3. `screen-h-lifecycle-map.html`
 
 ---
 
