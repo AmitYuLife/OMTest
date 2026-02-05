@@ -483,6 +483,31 @@
             border-color: #3FAACF;
             color: #3FAACF;
         }
+
+        .card-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .card-action-btn {
+            flex: 1;
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #1A1A1A;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .card-action-btn:hover {
+            background: #FAFAFE;
+            border-color: #3FAACF;
+            color: #3FAACF;
+        }
     </style>
 </head>
 <body>
@@ -567,6 +592,11 @@
                 <p class="benefit-description">
                     Your cover didn't stop when you left employment. You and your family remain protected at the same level.
                 </p>
+                <div class="card-actions">
+                    <button class="card-action-btn" onclick="event.stopPropagation();">View certificate</button>
+                    <button class="card-action-btn" onclick="event.stopPropagation();">Update beneficiaries</button>
+                    <button class="card-action-btn" onclick="event.stopPropagation();">Submit claim</button>
+                </div>
             </div>
 
             <!-- What's New -->
