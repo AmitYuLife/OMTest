@@ -3,22 +3,24 @@
 
 ---
 
-## Color Palette
+## Color Palette (from 10x.co.za)
 
 ### Primary Colors
 ```css
---10x-primary-orange: #FF6B35;  /* Primary brand orange/coral */
+--10x-navy: #1E3B70;            /* Primary brand navy blue */
+--10x-teal: #3FAACF;            /* Secondary brand teal/cyan */
 --10x-dark: #1A1A1A;            /* Primary text */
 --10x-white: #FFFFFF;           /* Backgrounds */
---10x-light-gray: #F8F8F8;      /* Secondary backgrounds */
+--10x-light-gray: #EFF4F8;      /* Secondary backgrounds */
 ```
 
 ### Secondary/Accent Colors
 ```css
---10x-medium-gray: #6B6B6B;     /* Secondary text */
---10x-light-gray-2: #E5E5E5;    /* Borders, dividers */
---10x-success-green: #00C48C;    /* Positive growth */
---10x-warning-red: #FF4757;      /* Negative/alerts */
+--10x-gray-blue: #929CAA;       /* Secondary gray-blue */
+--10x-tan: #B68B65;             /* Tertiary tan/brown */
+--10x-mauve: #8F4A74;           /* Accent mauve/purple */
+--10x-success-green: #00C48C;   /* Positive growth */
+--10x-warning-red: #FF4757;     /* Negative/alerts */
 ```
 
 ### Yu Brand Colors (for co-branding)
