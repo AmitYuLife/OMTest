@@ -1,4 +1,4 @@
-# Old Mutual ❤️ Yu - Screen Design Index
+# 10X ❤️ Yu - Screen Design Index
 ## Complete Screen Library for 8-Slide Concept Deck
 
 ---
@@ -50,7 +50,7 @@
 - Empathetic hero ("You're leaving your employer")
 - What you've built summary (pension + life + disability)
 - Three clear choices:
-  1. ✅ Stay with Old Mutual (RECOMMENDED)
+  1. ✅ Stay with 10X (RECOMMENDED)
   2. ⚠️ Cash out (WARNING with consequences)
   3. ➡️ Transfer elsewhere (NEUTRAL)
 - Adviser support section
@@ -110,7 +110,7 @@
 ### Reusable Components (Used Across Screens)
 
 **Header Component** (92px)
-- Old Mutual logo + ❤️ + Yu square
+- 10X logo + ❤️ + Yu square
 - Hamburger menu + notification bell
 - YuCoin counter
 - Usage: All screens
@@ -267,7 +267,7 @@ screens/
 
 ## 🎤 Presentation Strategy
 
-### For Old Mutual Meetings (Feb 9-16)
+### For 10X COO Meeting
 
 **Opening** (Screen A):
 > "This is the foundation—where members return daily to see their retirement and protection working together as one financial home."
@@ -334,7 +334,7 @@ screens/
 Before considering any screen "done":
 
 **Design**:
-- [ ] Matches brand guidelines (Old Mutual + Yu)
+- [ ] Matches brand guidelines (10X + Yu)
 - [ ] Follows design system (colors, typography, spacing)
 - [ ] All spacing on 8px grid
 - [ ] Touch targets ≥ 44px
@@ -423,7 +423,7 @@ Before considering any screen "done":
 
 - **Designer**: Amit (Screen execution, Figma)
 - **Leadership**: Hal (Yu, visiting SA Feb 9-16)
-- **Old Mutual Liaison**: Jaco (Requirements, feedback)
+- **10X Liaison**: Jaco (Requirements, feedback)
 - **UX Expert**: George (NN pensions, currently unavailable)
 - **Tool**: Pencil AI + Figma
 
@@ -438,14 +438,14 @@ This isn't just 8 app screens. This is:
 3. **Unified Value View**: Breaking down product silos
 4. **Critical Moment Design**: Preserving value at job change
 5. **Channel-Supportive**: Technology + advisers working together
-6. **Scalable Foundation**: Pattern for Old Mutual's entire digital strategy
+6. **Scalable Foundation**: Pattern for 10X's entire digital strategy
 
 **We're not designing screens—we're designing the future of member engagement.**
 
 ---
 
 *Master index created: February 3, 2026*  
-*Project: Old Mutual ❤️ Yu Unified Engagement Layer*  
+*Project: 10X ❤️ Yu Unified Engagement Layer*  
 *Screens Complete: 2/8 (A, D)*  
 *Status: Foundation solid, continuing build*  
 *Timeline: On track for Feb 9-16 meetings*

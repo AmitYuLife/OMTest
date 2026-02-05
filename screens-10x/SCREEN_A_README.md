@@ -98,7 +98,7 @@ Shows unified activity across all benefits.
 ## 🎨 Design Highlights
 
 ### Visual Identity
-- **Hero**: Old Mutual Green (`#76B657`) - optimistic, growth-oriented
+- **Hero**: 10X Navy (`#1E3B70`) - professional, trustworthy
 - **Greeting**: "Good morning, Sarah" - personalized
 - **Title**: "Your financial home" - emotional connection
 - **Subtitle**: Clear value proposition in plain language
@@ -154,7 +154,7 @@ From Comprehensive Design Brief - Screen A:
 4. Understand behavioral design rationale
 
 ### Option 3: Implement in Figma (3-4 hours)
-1. Open existing Old Mutual Concepts file
+1. Open existing 10X Concepts file
 2. Reuse header from pensions screen
 3. Create new hero with green background + greeting
 4. Build quick stats bar (3 columns)
@@ -168,7 +168,7 @@ From Comprehensive Design Brief - Screen A:
 ## 🎯 Design System Consistency
 
 ### Matches Existing Pensions Screen:
-✅ Header (92px, Old Mutual + Yu)
+✅ Header (92px, 10X + Yu)
 ✅ Hero height (300px, rounded bottom)
 ✅ Card borders (1px `#E3E3E1`, 16px radius)
 ✅ Typography (Bariol Bold/Regular)
@@ -384,7 +384,7 @@ GET /api/member/dashboard
 
 ## 🎤 Presentation Talking Points
 
-When presenting to Old Mutual:
+When presenting to 10X:
 
 ### Opening:
 > "This is the anchor screen—the foundation of the entire experience. It's where members return daily to see their retirement and protection working together as one financial home."
@@ -412,7 +412,7 @@ When presenting to Old Mutual:
    - "One-thumb operation—all key actions within reach."
 
 ### The Ask:
-> "If members return to this screen daily and see their retirement + protection as one unified picture, we'll increase engagement, reduce leakage, and create lasting relationships. This is their financial home with Old Mutual ❤️ Yu."
+> "If members return to this screen daily and see their retirement + protection as one unified picture, we'll increase engagement, reduce leakage, and create lasting relationships. This is their financial home with 10X ❤️ Yu."
 
 ---
 
@@ -502,7 +502,7 @@ This screen connects to:
 3. **Behavioral Intelligence**: Nudges that help, not push
 4. **Emotional Connection**: "Your financial home" creates belonging
 5. **Scalable Pattern**: Foundation for other 7 screens
-6. **Brand Differentiation**: Old Mutual ❤️ Yu positioning visible and meaningful
+6. **Brand Differentiation**: 10X ❤️ Yu positioning visible and meaningful
 
 **This isn't just an app screen—it's a new way of thinking about member relationships.**
 
@@ -526,7 +526,7 @@ screens/
 3. **Test**: Show to SA users for feedback
 4. **Iterate**: Refine based on feedback
 5. **Integrate**: Connect with other 7 screens
-6. **Present**: Include in Old Mutual deck (Feb 9-16)
+6. **Present**: Include in 10X COO meeting
 
 ---
 
@@ -537,4 +537,4 @@ screens/
 *Package created: February 3, 2026*  
 *Screen: A - Unified Member Home (ANCHOR)*  
 *Status: ✅ Ready for Implementation*  
-*Next: Team Review → Figma → Old Mutual Presentation*
+*Next: Team Review → Figma → 10X Presentation*

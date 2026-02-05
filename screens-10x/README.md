@@ -5,7 +5,7 @@
 
 ## 📦 What's Included
 
-This package contains everything needed to implement Screen D (the CRITICAL employee exit screen) for the Old Mutual ❤️ Yu concept deck.
+This package contains everything needed to implement Screen D (the CRITICAL employee exit screen) for the 10X ❤️ Yu concept deck.
 
 ### Files in This Package
 
@@ -98,7 +98,7 @@ This package contains everything needed to implement Screen D (the CRITICAL empl
    - Makes preservation tangible and real
 
 3. **Three Clear Choices**
-   - **Option 1 (Recommended)**: Stay with Old Mutual
+   - **Option 1 (Recommended)**: Stay with 10X
      - Green highlight, gradient background, "Member-for-Life" badge
      - 4 benefits listed with check icons
    - **Option 2 (Warning)**: Cash out
@@ -114,7 +114,7 @@ This package contains everything needed to implement Screen D (the CRITICAL empl
    - Channel-supportive, not bypass
 
 5. **Clear CTA**
-   - "Continue with Old Mutual" button
+   - "Continue with 10X" button
    - Green, prominent, easy to tap
    - Reinforces recommended path
 
@@ -123,7 +123,7 @@ This package contains everything needed to implement Screen D (the CRITICAL empl
 ## 📊 Design System Consistency
 
 ### Reuses from Existing Pensions Screen:
-✅ Header (Old Mutual + ❤️ Yu branding)
+✅ Header (10X + ❤️ Yu branding)
 ✅ Hero structure (260px height, rounded bottom)
 ✅ Card styling (borders, shadows, radius)
 ✅ Typography (Bariol font family, same sizes)
@@ -167,7 +167,7 @@ This package contains everything needed to implement Screen D (the CRITICAL empl
    - Alternatives transparent, not demonized
 
 6. **Framing**
-   - "Stay with Old Mutual" (continuity) vs "Cash out" (loss)
+   - "Stay with 10X" (continuity) vs "Cash out" (loss)
    - "Member-for-Life" (belonging) vs "Transfer" (starting over)
 
 ---
@@ -226,7 +226,7 @@ From the Comprehensive Design Brief:
 
 ## 👥 Stakeholder Alignment
 
-### For Old Mutual Leadership:
+### For 10X Leadership:
 ✅ Increases lifetime value without changing product economics
 ✅ Supports existing distribution (advisers featured)
 ✅ Leverages existing admin infrastructure
@@ -271,7 +271,7 @@ From the Comprehensive Design Brief:
 
 ## 🎤 Presentation Talking Points
 
-When presenting to Old Mutual:
+When presenting to 10X:
 
 ### Opening:
 > "This is the most important screen in our concept. Job change is when we typically lose members and assets. This design makes preservation the obvious choice—transparently and without pressure."
@@ -284,7 +284,7 @@ When presenting to Old Mutual:
 5. **Member-for-Life** → Relationship continues
 
 ### The Ask:
-> "If we get this one screen right, we could move the preservation needle from 40% to 70%+. That's millions in retained assets and thousands of members who stay in the Old Mutual family."
+> "If we get this one screen right, we could move the preservation needle from 40% to 70%+. That's millions in retained assets and thousands of members who stay in the 10X family."
 
 ---
 
@@ -347,10 +347,10 @@ When presenting to Old Mutual:
 ### Reference Documents:
 - `COMPREHENSIVE_DESIGN_BRIEF.md` (main project brief)
 - `Project_Knowledge/` folder (external brief, internal brief, kickoff notes)
-- Figma file: Old Mutual Concepts (node-id=8017:13192)
+- Figma file: 10X Concepts
 
 ### Design System:
-- Colors: Old Mutual brand palette + Yu accents
+- Colors: 10X brand palette + Yu accents
 - Typography: Bariol (Bold, Regular)
 - Icons: Emoji (placeholder) → Can replace with brand icons
 - Spacing: 8px grid system
@@ -378,7 +378,7 @@ A: This package covers Screen D only. Other screens use similar components.
 **Q: Can this work on desktop?**
 A: Yes—center the 375px container with max-width and side margins.
 
-**Q: What if Old Mutual wants changes?**
+**Q: What if 10X wants changes?**
 A: Expected! This is designed to be iterable. Prioritize their feedback.
 
 **Q: How long to implement in Figma?**
@@ -388,7 +388,7 @@ A: ~2 hours for experienced user following the guide.
 A: Considered in design (WCAG AA colors, semantic HTML, 44px touch targets).
 
 **Q: Can I use this for other projects?**
-A: This is specific to Old Mutual ❤️ Yu, but patterns are reusable.
+A: This is specific to 10X ❤️ Yu, but patterns are reusable.
 
 ---
 
@@ -397,7 +397,7 @@ A: This is specific to Old Mutual ❤️ Yu, but patterns are reusable.
 For questions or feedback on this design package:
 
 - **Designer**: Amit
-- **Project**: Old Mutual ❤️ Yu Unified Engagement Layer
+- **Project**: 10X ❤️ Yu Unified Engagement Layer
 - **Timeline**: Needed for SA meetings Feb 9-16, 2026
 - **Status**: Ready for review and implementation
 
@@ -409,7 +409,7 @@ This design will be successful if:
 
 1. ✅ **Stakeholders understand it** (clear, simple, compelling)
 2. ✅ **It can be built quickly** (~2 hours in Figma)
-3. ✅ **It matches brand guidelines** (Old Mutual + Yu)
+3. ✅ **It matches brand guidelines** (10X + Yu)
 4. ✅ **It tells the right story** (member-first, not salesy)
 5. ✅ **It addresses the critical moment** (job change preservation)
 6. 📊 **It moves the needle** (TBD: post-launch metrics)
@@ -424,7 +424,7 @@ This design will be successful if:
 4. **Supportive**: Adviser is partner, not obstacle
 5. **Simple**: 3 choices, not overwhelming
 6. **Tested Pattern**: Based on choice architecture research
-7. **Brand Consistent**: Uses existing Old Mutual design system
+7. **Brand Consistent**: Uses existing 10X design system
 8. **Member-First**: Always optional, never forced
 
 **This isn't just a screen—it's a behavioral intervention at the highest-value moment in the member lifecycle.**
@@ -434,7 +434,7 @@ This design will be successful if:
 *Package created: February 3, 2026*  
 *Screen: D - Employee Exit Journey*  
 *Status: ✅ Ready for Implementation*  
-*Next: Team Review → Figma → Old Mutual Presentation*
+*Next: Team Review → Figma → 10X Presentation*
 
 ---
 

@@ -1,5 +1,5 @@
 # Screen A: Unified Member Home - Design Specification
-## Old Mutual ❤️ Yu Unified Engagement Layer
+## 10X ❤️ Yu Unified Engagement Layer
 
 ---
 
@@ -29,7 +29,7 @@
 
 **Elements**:
 - **Left**: Hamburger menu (24px) + Notification bell (24px)
-- **Center**: Old Mutual logo + ❤️ separator + Yu square
+- **Center**: 10X logo + ❤️ separator + Yu square
 - **Right**: YuCoin count (2,502) + coin icon (24px)
 
 **Colors**:
@@ -72,7 +72,7 @@
   - Max width: 250px
 
 **Colors**:
-- Background: `#76B657` (Old Mutual Secondary Green)
+- Background: `#3FAACF` (10X Teal)
 - Text: `#FFFFFF`
 - Illustration: White circles, 20-40% opacity
 
@@ -654,4 +654,4 @@ This screen is designed to:
 *Screen: A - Unified Member Home*  
 *Type: Anchor Screen (Most Important)*  
 *Designer: Amit*  
-*Project: Old Mutual ❤️ Yu Unified Engagement Layer*
+*Project: 10X ❤️ Yu Unified Engagement Layer*
