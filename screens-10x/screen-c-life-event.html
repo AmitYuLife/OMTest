@@ -121,6 +121,14 @@
         }
 
         /* Hero Section */
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            margin-top: -40px;
+            position: relative;
+            z-index: 1;
+        }
+
         .hero {
             background: linear-gradient(135deg, #E30D76 0%, #E30D76 100%);
             min-height: 180px;
@@ -526,13 +534,15 @@
         </div>
 
         <!-- Hero Section -->
-        <div class="hero">
-            <div class="ai-badge">
-                <span class="ai-badge-icon">✨</span>
-                <span class="ai-badge-text">AI-Powered Insights</span>
+        <div class="hero-section">
+            <div class="hero">
+                <div class="ai-badge">
+                    <span class="ai-badge-icon">✨</span>
+                    <span class="ai-badge-text">AI-Powered Insights</span>
+                </div>
+                <h1 class="hero-title">Your personalized scenarios</h1>
+                <p class="hero-subtitle">Based on people like you with young children</p>
             </div>
-            <h1 class="hero-title">Your personalized scenarios</h1>
-            <p class="hero-subtitle">Based on people like you with young children</p>
         </div>
 
         <!-- Content Section -->
