@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen C: Life Event AI Insights - 10X ❤️ Yu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Bariol', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F5F5F5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .screen {
+            width: 375px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            height: 92px;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.08);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 52px 24px 16px 24px;
+            z-index: 100;
+        }
+
+        .header-left {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .back-button {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .back-button svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .header-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .om-yu-lockup {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            height: 20px;
+        }
+
+        .brand-text {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #1A1A1A;
+            letter-spacing: 0.5px;
+            line-height: 1;
+        }
+
+        .heart-separator {
+            font-size: 11px;
+            line-height: 1;
+        }
+
+        .yu-square {
+            width: 20px;
+            height: 20px;
+            background: #E30D76;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #E30D76 0%, #E30D76 100%);
+            min-height: 180px;
+            border-radius: 0 0 16px 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 6px 12px;
+            border-radius: 20px;
+            align-self: flex-start;
+        }
+
+        .ai-badge-icon {
+            font-size: 14px;
+        }
+
+        .ai-badge-text {
+            font-size: 11px;
+            font-weight: 700;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            color: white;
+            max-width: 280px;
+        }
+
+        .hero-subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: white;
+            opacity: 0.9;
+        }
+
+        /* Content Section */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 32px 24px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            color: #1A1A1A;
+        }
+
+        /* Scenario Cards */
+        .scenario-card {
+            background: white;
+            border: 2px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .scenario-card.highlighted {
+            border-color: #FF6B35;
+            background: linear-gradient(135deg, #F8FFF4 0%, #FFFFFF 100%);
+        }
+
+        .scenario-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .scenario-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .scenario-icon {
+            font-size: 24px;
+        }
+
+        .scenario-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+        }
+
+        .scenario-badge {
+            background: #FF6B35;
+            color: white;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .scenario-metrics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .metric {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .metric-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: #A0A09B;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        .metric-value {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+        }
+
+        .metric-value.positive {
+            color: #FF6B35;
+        }
+
+        .metric-value.negative {
+            color: #E65100;
+        }
+
+        .scenario-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+            padding: 12px;
+            background: #FAFAFE;
+            border-radius: 8px;
+        }
+
+        .scenario-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            flex: 1;
+            background: #FF6B35;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background: #5BA348;
+        }
+
+        .btn-secondary {
+            flex: 1;
+            background: white;
+            color: #1A1A1A;
+            border: 1px solid #E3E3E1;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: #FF6B35;
+            color: #FF6B35;
+        }
+
+        /* Comparison Chart */
+        .comparison-chart {
+            background: #FAFAFE;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .comparison-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+            text-align: center;
+        }
+
+        .comparison-bars {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .comparison-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .comparison-bar-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .comparison-bar-name {
+            font-size: 12px;
+            font-weight: 700;
+            color: #464647;
+        }
+
+        .comparison-bar-value {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1A1A1A;
+        }
+
+        .comparison-bar-track {
+            height: 32px;
+            background: #E3E3E1;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .comparison-bar-fill {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 12px;
+            font-size: 12px;
+            font-weight: 700;
+            color: white;
+            transition: width 0.6s ease;
+        }
+
+        .comparison-bar-fill.scenario-1 {
+            background: #E3E3E1;
+            color: #464647;
+        }
+
+        .comparison-bar-fill.scenario-2 {
+            background: #FF6B35;
+        }
+
+        /* Insight Box */
+        .insight-box {
+            background: linear-gradient(135deg, #FFF3F8 0%, #FFFFFF 100%);
+            border: 2px solid #E30D76;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .insight-icon {
+            width: 48px;
+            height: 48px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .insight-content {
+            flex: 1;
+        }
+
+        .insight-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+            margin-bottom: 8px;
+        }
+
+        .insight-text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        /* Impact Summary */
+        .impact-summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .impact-item {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+        }
+
+        .impact-icon {
+            font-size: 28px;
+        }
+
+        .impact-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #FF6B35;
+        }
+
+        .impact-label {
+            font-size: 10px;
+            font-weight: 700;
+            color: #A0A09B;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        /* Navigation Footer */
+        .nav-footer {
+            padding: 20px 24px;
+            background: #FAFAFE;
+            border-top: 1px solid #E3E3E1;
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-btn {
+            flex: 1;
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #464647;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .nav-btn:hover {
+            border-color: #FF6B35;
+            color: #FF6B35;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <div class="back-button" onclick="window.open('screen-b-active-employment.html', '_blank')">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-center">
+                <img src="10x-yu-logo.png" alt="10X ❤️ Yu" style="height: 28px; width: auto;">
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="ai-badge">
+                <span class="ai-badge-icon">✨</span>
+                <span class="ai-badge-text">AI-Powered Insights</span>
+            </div>
+            <h1 class="hero-title">Your personalized scenarios</h1>
+            <p class="hero-subtitle">Based on people like you with young children</p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <!-- Scenario 1: If Nothing Changes -->
+            <h2 class="section-title">Compare your options</h2>
+            
+            <div class="scenario-card">
+                <div class="scenario-header">
+                    <div class="scenario-label">
+                        <span class="scenario-icon">📊</span>
+                        <span class="scenario-title">If nothing changes</span>
+                    </div>
+                </div>
+                <div class="scenario-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Life Cover</div>
+                        <div class="metric-value">R850k</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Coverage Gap</div>
+                        <div class="metric-value negative">-R350k</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Monthly Cost</div>
+                        <div class="metric-value">R425</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Risk Level</div>
+                        <div class="metric-value">Moderate</div>
+                    </div>
+                </div>
+                <div class="scenario-description">
+                    Your current cover provides 46 months of income replacement. For a family with one child, experts typically recommend 60-72 months.
+                </div>
+            </div>
+
+            <!-- Scenario 2: Recommended Adjustment -->
+            <div class="scenario-card highlighted">
+                <div class="scenario-header">
+                    <div class="scenario-label">
+                        <span class="scenario-icon">🎯</span>
+                        <span class="scenario-title">Recommended for you</span>
+                    </div>
+                    <span class="scenario-badge">Smart Choice</span>
+                </div>
+                <div class="scenario-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Life Cover</div>
+                        <div class="metric-value positive">R1.2M</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Coverage Gap</div>
+                        <div class="metric-value positive">✓ Covered</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Monthly Cost</div>
+                        <div class="metric-value">R575</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Risk Level</div>
+                        <div class="metric-value positive">Low</div>
+                    </div>
+                </div>
+                <div class="scenario-description">
+                    Provides 65 months of income replacement, covering childcare, education, and living expenses through age 18. This aligns with best practices for families like yours.
+                </div>
+                <div class="scenario-actions">
+                    <button class="btn-primary">Apply this change</button>
+                    <button class="btn-secondary">Learn more</button>
+                </div>
+            </div>
+
+            <!-- Visual Comparison -->
+            <div class="comparison-chart">
+                <div class="comparison-title">Coverage vs. Need Comparison</div>
+                <div class="comparison-bars">
+                    <div class="comparison-bar">
+                        <div class="comparison-bar-label">
+                            <span class="comparison-bar-name">Current coverage</span>
+                            <span class="comparison-bar-value">R850,000</span>
+                        </div>
+                        <div class="comparison-bar-track">
+                            <div class="comparison-bar-fill scenario-1" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                    <div class="comparison-bar">
+                        <div class="comparison-bar-label">
+                            <span class="comparison-bar-name">Recommended coverage</span>
+                            <span class="comparison-bar-value">R1,200,000</span>
+                        </div>
+                        <div class="comparison-bar-track">
+                            <div class="comparison-bar-fill scenario-2" style="width: 100%;">100%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Summary -->
+            <h2 class="section-title">What this means for you</h2>
+            <div class="impact-summary">
+                <div class="impact-item">
+                    <div class="impact-icon">💰</div>
+                    <div class="impact-value">+R350k</div>
+                    <div class="impact-label">Extra Protection</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-icon">📅</div>
+                    <div class="impact-value">65 months</div>
+                    <div class="impact-label">Coverage Period</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-icon">💳</div>
+                    <div class="impact-value">+R150/mo</div>
+                    <div class="impact-label">Cost Increase</div>
+                </div>
+            </div>
+
+            <!-- AI Insight -->
+            <div class="insight-box">
+                <div class="insight-icon">🤖</div>
+                <div class="insight-content">
+                    <div class="insight-title">Why we recommend this</div>
+                    <p class="insight-text">
+                        85% of members in your situation choose this level of cover. It balances comprehensive protection with affordability, and accounts for inflation over the next 18 years.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Flexibility Note -->
+            <div style="background: #ECF9EE; border: 1px solid #FF6B35; border-radius: 12px; padding: 16px; text-align: center;">
+                <p style="font-size: 14px; font-weight: 700; color: #1A1A1A; margin-bottom: 4px;">You can always adjust later</p>
+                <p style="font-size: 12px; color: #464647; line-height: 18px;">Life changes, and so can your cover. Increase or decrease anytime to match your needs.</p>
+            </div>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <button class="nav-btn" onclick="window.open('screen-b-active-employment.html', '_blank')">← Back</button>
+            <button class="nav-btn" onclick="window.open('screen-a-unified-home.html', '_blank')">Home</button>
+            <button class="nav-btn" onclick="window.open('index.html', '_blank')">All Screens</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen B: Active Employment - 10X ❤️ Yu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Bariol';
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Bariol', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F5F5F5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .screen {
+            width: 375px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            height: 92px;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0px 4px 24px 0px rgba(0,0,0,0.08);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 52px 24px 16px 24px;
+            z-index: 100;
+        }
+
+        .header-left {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .hamburger, .notification {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .hamburger svg, .notification svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .header-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .om-yu-lockup {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            height: 20px;
+        }
+
+        .brand-text {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #1A1A1A;
+            letter-spacing: 0.5px;
+            line-height: 1;
+        }
+
+        .heart-separator {
+            font-size: 11px;
+            line-height: 1;
+        }
+
+        .yu-square {
+            width: 20px;
+            height: 20px;
+            background: #E30D76;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: white;
+            line-height: 1;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coin-count {
+            font-size: 18px;
+            color: #1A1A1A;
+            font-weight: 400;
+        }
+
+        .coin-icon {
+            width: 24px;
+            height: 24px;
+            background: #FFD600;
+            border-radius: 50%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #FF6B35;
+            min-height: 200px;
+            border-radius: 0 0 16px 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-icon {
+            font-size: 48px;
+            line-height: 1;
+        }
+
+        .hero-title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            color: white;
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: white;
+            opacity: 0.9;
+        }
+
+        /* Content Section */
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 32px 24px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0.8px;
+            color: #1A1A1A;
+            margin-bottom: 16px;
+        }
+
+        /* Life Event Card */
+        .life-event-card {
+            background: linear-gradient(135deg, #FFF9E5 0%, #FFFBF0 100%);
+            border: 2px solid #FFD600;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .life-event-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .life-event-icon {
+            width: 48px;
+            height: 48px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .life-event-text {
+            flex: 1;
+        }
+
+        .life-event-badge {
+            font-size: 10px;
+            font-weight: 700;
+            color: #E65100;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .life-event-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+            margin-top: 4px;
+        }
+
+        .life-event-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+        }
+
+        .life-event-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            flex: 1;
+            background: #FF6B35;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background: #5BA348;
+        }
+
+        .btn-secondary {
+            flex: 1;
+            background: white;
+            color: #1A1A1A;
+            border: 1px solid #E3E3E1;
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: #FF6B35;
+            color: #FF6B35;
+        }
+
+        /* Suggestion Cards */
+        .suggestion-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            gap: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .suggestion-card:hover {
+            border-color: #FF6B35;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .suggestion-icon {
+            width: 56px;
+            height: 56px;
+            background: #FAFAFE;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            flex-shrink: 0;
+        }
+
+        .suggestion-content {
+            flex: 1;
+        }
+
+        .suggestion-label {
+            font-size: 12px;
+            font-weight: 700;
+            color: #FF6B35;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .suggestion-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+            margin-bottom: 6px;
+        }
+
+        .suggestion-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #A0A09B;
+        }
+
+        .suggestion-badge {
+            align-self: flex-start;
+            background: #ECF9EE;
+            color: #FF6B35;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        /* Social Proof Section */
+        .social-proof {
+            background: #FAFAFE;
+            border: 1px solid #E3E3E1;
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .social-proof-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .social-proof-icon {
+            font-size: 32px;
+        }
+
+        .social-proof-title {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            color: #1A1A1A;
+        }
+
+        .social-proof-stat {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            color: #464647;
+            margin-bottom: 12px;
+        }
+
+        .social-proof-examples {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .social-proof-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .social-proof-check {
+            color: #FF6B35;
+            font-size: 16px;
+        }
+
+        .social-proof-text {
+            font-size: 14px;
+            font-weight: 400;
+            color: #464647;
+        }
+
+        /* Current Status Cards */
+        .status-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        .status-card {
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .status-card-label {
+            font-size: 10px;
+            font-weight: 700;
+            color: #A0A09B;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+
+        .status-card-value {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            color: #1A1A1A;
+        }
+
+        .status-card-icon {
+            font-size: 24px;
+            margin-top: 4px;
+        }
+
+        /* Navigation Footer */
+        .nav-footer {
+            padding: 20px 24px;
+            background: #FAFAFE;
+            border-top: 1px solid #E3E3E1;
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-btn {
+            flex: 1;
+            background: white;
+            border: 1px solid #E3E3E1;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #464647;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .nav-btn:hover {
+            border-color: #FF6B35;
+            color: #FF6B35;
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-left">
+                <div class="hamburger">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                        <line x1="3" y1="7" x2="21" y2="7"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="17" x2="21" y2="17"/>
+                    </svg>
+                </div>
+                <div class="notification">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-center">
+                <img src="10x-yu-logo.png" alt="10X ❤️ Yu" style="height: 28px; width: auto;">
+            </div>
+            <div class="header-right">
+                <span class="coin-count">2,502</span>
+                <div class="coin-icon"></div>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-icon">🎉</div>
+            <h1 class="hero-title">Life is changing</h1>
+            <p class="hero-subtitle">Your benefits can keep up with you</p>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content-section">
+            <!-- Life Event Alert -->
+            <div class="life-event-card">
+                <div class="life-event-header">
+                    <div class="life-event-icon">👶</div>
+                    <div class="life-event-text">
+                        <div class="life-event-badge">Life Event Detected</div>
+                        <div class="life-event-title">Your family is growing</div>
+                    </div>
+                </div>
+                <p class="life-event-description">
+                    Congratulations, Sarah! Many people in your situation consider updating their protection to match their new responsibilities.
+                </p>
+                <div class="life-event-actions">
+                    <button class="btn-primary" onclick="window.open('screen-c-life-event.html', '_blank')">Review my cover</button>
+                    <button class="btn-secondary">Maybe later</button>
+                </div>
+            </div>
+
+            <!-- Current Status -->
+            <h2 class="section-title">Your current benefits</h2>
+            <div class="status-cards">
+                <div class="status-card">
+                    <div class="status-card-label">Life Cover</div>
+                    <div class="status-card-value">R850k</div>
+                    <div class="status-card-icon">🛡️</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-card-label">Monthly Income</div>
+                    <div class="status-card-value">R18,500</div>
+                    <div class="status-card-icon">💰</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-card-label">Dependents</div>
+                    <div class="status-card-value">1 child</div>
+                    <div class="status-card-icon">👨‍👩‍👧</div>
+                </div>
+                <div class="status-card">
+                    <div class="status-card-label">Retirement</div>
+                    <div class="status-card-value">R75k</div>
+                    <div class="status-card-icon">🌱</div>
+                </div>
+            </div>
+
+            <!-- Smart Suggestions -->
+            <h2 class="section-title">Based on people like you...</h2>
+            
+            <div class="suggestion-card" onclick="window.open('screen-c-life-event.html', '_blank')">
+                <div class="suggestion-icon">➕</div>
+                <div class="suggestion-content">
+                    <div class="suggestion-label">Recommended</div>
+                    <div class="suggestion-title">Increase life cover</div>
+                    <div class="suggestion-description">Consider increasing to R1.2M to cover childcare costs for 18 years</div>
+                </div>
+                <div class="suggestion-badge">Popular</div>
+            </div>
+
+            <div class="suggestion-card" onclick="window.open('screen-c-life-event.html', '_blank')">
+                <div class="suggestion-icon">🏥</div>
+                <div class="suggestion-content">
+                    <div class="suggestion-label">Optional</div>
+                    <div class="suggestion-title">Add critical illness cover</div>
+                    <div class="suggestion-description">Peace of mind for medical emergencies</div>
+                </div>
+            </div>
+
+            <div class="suggestion-card">
+                <div class="suggestion-icon">📚</div>
+                <div class="suggestion-content">
+                    <div class="suggestion-label">Planning Ahead</div>
+                    <div class="suggestion-title">Education savings</div>
+                    <div class="suggestion-description">Start small now, compound over 18 years</div>
+                </div>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="social-proof">
+                <div class="social-proof-header">
+                    <div class="social-proof-icon">👥</div>
+                    <div class="social-proof-title">What similar members do</div>
+                </div>
+                <p class="social-proof-stat">85% of members with young children increased their cover within 6 months</p>
+                <div class="social-proof-examples">
+                    <div class="social-proof-item">
+                        <span class="social-proof-check">✓</span>
+                        <span class="social-proof-text">Increased life cover to 15x salary</span>
+                    </div>
+                    <div class="social-proof-item">
+                        <span class="social-proof-check">✓</span>
+                        <span class="social-proof-text">Added spouse to policy</span>
+                    </div>
+                    <div class="social-proof-item">
+                        <span class="social-proof-check">✓</span>
+                        <span class="social-proof-text">Started small education fund</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Pressure Message -->
+            <div style="background: #ECF9EE; border: 1px solid #FF6B35; border-radius: 12px; padding: 16px; text-align: center;">
+                <p style="font-size: 14px; font-weight: 700; color: #1A1A1A; margin-bottom: 4px;">Take your time</p>
+                <p style="font-size: 12px; color: #464647; line-height: 18px;">These are suggestions, not requirements. Your current cover is already good. We're here when you're ready.</p>
+            </div>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="nav-footer">
+            <button class="nav-btn" onclick="window.open('screen-a-unified-home.html', '_blank')">← Home</button>
+            <button class="nav-btn" onclick="window.open('screen-c-life-event.html', '_blank')">See Scenarios →</button>
+            <button class="nav-btn" onclick="window.open('index.html', '_blank')">All Screens</button>
+        </div>
+    </div>
+</body>
+</html>
